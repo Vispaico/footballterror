@@ -1,0 +1,10 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "services/*"
+  - "agents/*"
+  - "models/*"
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+  sharp: set this to true or false

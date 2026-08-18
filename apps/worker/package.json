@@ -1,0 +1,23 @@
+{
+  "name": "@footballterror/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@footballterror/database": "workspace:*",
+    "@footballterror/config": "workspace:*",
+    "@footballterror/logger": "workspace:*",
+    "@footballterror/ingestion": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.3"
+  }
+}

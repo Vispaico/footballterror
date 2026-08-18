@@ -1,0 +1,23 @@
+{
+  "name": "footballterror",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FootballTerror — AI-native football intelligence platform",
+  "packageManager": "pnpm@11.20.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "test:ci": "turbo test -- --run",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "db:migrate": "pnpm --filter @footballterror/database migrate",
+    "db:generate": "pnpm --filter @footballterror/database generate",
+    "ingest": "pnpm --filter @footballterror/ingestion ingest",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.3"
+  }
+}

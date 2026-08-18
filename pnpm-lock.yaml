@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      tsx:
+        specifier: ^4.23.12
+        version: 4.23.12
       turbo:
         specifier: ^2.5.0
         version: 2.10.10
@@ -84,6 +87,18 @@ importers:
         specifier: ^5.8.3
         version: 5.9.3
 
+  models/elo:
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
+
+  models/poisson:
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
+
   packages/config:
     dependencies:
       dotenv:
@@ -134,6 +149,32 @@ importers:
       '@types/node':
         specifier: ^22.0.0
         version: 22.20.1
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
+
+  services/agents:
+    dependencies:
+      '@footballterror/football-schema':
+        specifier: workspace:*
+        version: link:../../packages/football-schema
+      '@footballterror/logger':
+        specifier: workspace:*
+        version: link:../../packages/logger
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
+
+  services/analytics:
+    dependencies:
+      '@footballterror/football-schema':
+        specifier: workspace:*
+        version: link:../../packages/football-schema
+      '@footballterror/logger':
+        specifier: workspace:*
+        version: link:../../packages/logger
+    devDependencies:
       typescript:
         specifier: ^5.8.3
         version: 5.9.3

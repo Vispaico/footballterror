@@ -1,0 +1,70 @@
+# FootballTerror — Docker Compose
+# For Coolify deployment: import this file or use individual Dockerfiles
+# For local dev: docker compose up
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: footballterror
+      POSTGRES_USER: footballterror
+      POSTGRES_PASSWORD: \${POSTGRES_PASSWORD:-changeme}
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U footballterror"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://footballterror:\${POSTGRES_PASSWORD:-changeme}@postgres:5432/footballterror
+      REDIS_URL: redis://redis:6379
+      NODE_ENV: production
+      PORT: 3001
+      API_FOOTBALL_KEY: \${API_FOOTBALL_KEY}
+      FOOTBALL_DATA_KEY: \${FOOTBALL_DATA_KEY}
+    ports:
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://footballterror:\${POSTGRES_PASSWORD:-changeme}@postgres:5432/footballterror
+      REDIS_URL: redis://redis:6379
+      NODE_ENV: production
+      PORT: 3000
+      NEXT_PUBLIC_API_URL: http://api:3001
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  pg_data:
+  redis_data:

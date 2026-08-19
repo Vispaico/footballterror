@@ -41,6 +41,18 @@ temp/
 *.log
 logs/
 
+# Large data files (keep structure, not content)
+data/match-output/*.json
+data/statsbomb/
+
+# Build artifacts
+.next/
+out/
+*.tsbuildinfo
+
+# Docker
+.dockerignore
+
 # Secrets - NEVER commit
 *.pem
 *.key

@@ -11,9 +11,11 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@footballterror/database": "workspace:*",
     "@footballterror/config": "workspace:*",
+    "@footballterror/database": "workspace:*",
     "@footballterror/logger": "workspace:*",
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.6",
     "express": "^5.1.0"
   },
   "devDependencies": {

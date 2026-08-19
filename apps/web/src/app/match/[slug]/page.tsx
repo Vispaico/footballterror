@@ -1,12 +1,17 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const MATCHES_DIR = path.resolve(process.cwd(), "../../data/match-output");
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001";
+const DATA_DIR = path.resolve(process.cwd(), "../../data/match-output");
 
 async function getMatch(slug: string) {
+  // Try API first, fallback to local file
   try {
-    const data = await fs.readFile(path.join(MATCHES_DIR, `${slug}.json`), "utf-8");
-    return JSON.parse(data);
+    const resp = await fetch(`${API_URL}/api/match/${slug}`);
+    if (resp.ok) return resp.json();
+  } catch {}
+  try {
+    return JSON.parse(await fs.readFile(path.join(DATA_DIR, `${slug}.json`), "utf-8"));
   } catch { return null; }
 }
 
@@ -41,19 +46,19 @@ function ScoreHeader({ match }: { match: any }) {
   );
 }
 
-function StatBar({ label, home, away, homeColor = "bg-red-500", awayColor = "bg-blue-500" }: { label: string; home: number; away: number; homeColor?: string; awayColor?: string }) {
-  const total = home + away || 1;
-  const homePct = (home / total) * 100;
+function StatBar({ label, home, away }: { label: string; home: number; away: number }) {
+  const total = (home || 0) + (away || 0) || 1;
+  const homePct = ((home || 0) / total) * 100;
   return (
     <div className="mb-3">
       <div className="flex justify-between text-xs mb-1">
-        <span className="font-mono text-red-400">{home}</span>
+        <span className="font-mono text-red-400">{home ?? 0}</span>
         <span className="text-zinc-500">{label}</span>
-        <span className="font-mono text-blue-400">{away}</span>
+        <span className="font-mono text-blue-400">{away ?? 0}</span>
       </div>
       <div className="h-1.5 flex rounded-full overflow-hidden bg-zinc-800">
-        <div className={`${homeColor} rounded-l-full transition-all`} style={{ width: `${homePct}%` }} />
-        <div className={`${awayColor} rounded-r-full transition-all`} style={{ width: `${100 - homePct}%` }} />
+        <div className="bg-red-500 rounded-l-full transition-all" style={{ width: `${homePct}%` }} />
+        <div className="bg-blue-500 rounded-r-full transition-all" style={{ width: `${100 - homePct}%` }} />
       </div>
     </div>
   );
@@ -90,7 +95,7 @@ function ProbabilityRing({ label, value, color }: { label: string; value: number
 
 function TerrorMeter({ score, level }: { score: number; level: string }) {
   const colors: Record<string, string> = { DORMANT: "#52525b", WATCHABLE: "#eab308", HEATED: "#f97316", DANGEROUS: "#ef4444", TERROR: "#dc2626", "TOTAL WAR": "#991b1b" };
-  const color = colors[level] || "#52525b";
+  const color = colors[level] ?? "#52525b";
   return (
     <div>
       <div className="flex items-center gap-3 mb-2">
@@ -110,44 +115,9 @@ function TerrorMeter({ score, level }: { score: number; level: string }) {
   );
 }
 
-function AgentVerdict({ verdict }: { verdict: any }) {
-  if (!verdict) return null;
-  return (
-    <div className="rounded-lg border border-red-900/50 bg-gradient-to-br from-red-950/30 to-zinc-900/50 p-5">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="text-red-500 text-lg">🔴</span>
-        <h3 className="text-sm font-bold uppercase tracking-widest text-red-400">The Terror — Verdict</h3>
-      </div>
-      <div className="text-lg font-bold text-white mb-2">{verdict.headline}</div>
-      <div className="text-sm text-zinc-300 leading-relaxed mb-4">{verdict.summary}</div>
-      <div className="space-y-2">
-        {verdict.keyInsights?.map((insight: string, i: number) => (
-          <div key={i} className="flex items-start gap-2">
-            <span className="text-red-500 mt-0.5 text-xs">▸</span>
-            <span className="text-sm text-zinc-300">{insight}</span>
-          </div>
-        ))}
-      </div>
-      <div className="mt-4 pt-3 border-t border-zinc-800">
-        <div className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2">Agent Contributions</div>
-        <div className="space-y-1.5">
-          {Object.entries(verdict.agentContributions || {}).map(([type, text]) => (
-            <div key={type} className="flex gap-2">
-              <span className="text-[10px] font-bold uppercase text-zinc-500 w-20 shrink-0">[{type}]</span>
-              <span className="text-xs text-zinc-400">{String(text).slice(0, 120)}...</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-
-
 function EvidenceTag({ type }: { type: string }) {
   const colors: Record<string, string> = { FACT: "bg-green-900/50 text-green-400", MODEL_OUTPUT: "bg-blue-900/50 text-blue-400", FORECAST: "bg-purple-900/50 text-purple-400", INFERENCE: "bg-amber-900/50 text-amber-400", OPINION: "bg-pink-900/50 text-pink-400", UNKNOWN: "bg-zinc-800 text-zinc-500" };
-  return <span className={`inline-block px-1.5 py-0.5 rounded text-[9px] font-bold uppercase ${colors[type] || colors.UNKNOWN}`}>{type}</span>;
+  return <span className={`inline-block px-1.5 py-0.5 rounded text-[9px] font-bold uppercase ${colors[type] ?? colors.UNKNOWN}`}>{type}</span>;
 }
 
 export default async function MatchPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -157,17 +127,12 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
 
   const hf = match.homeFeatures;
   const af = match.awayFeatures;
+  const ti = Math.min(100, Math.max(0, 70 * 0.3 + ((match.prediction.expectedHomeGoals + match.prediction.expectedAwayGoals) * 15) * 0.3 + (match.prediction.confidence < 0.6 ? 30 : match.prediction.confidence < 0.7 ? 20 : 10) * 0.2 + 25 * 0.2));
+  const tl = ti >= 85 ? "TOTAL WAR" : ti >= 70 ? "DANGEROUS" : ti >= 50 ? "HEATED" : ti >= 30 ? "WATCHABLE" : "DORMANT";
 
   return (
     <div className="min-h-screen bg-black text-zinc-200">
-      {/* Score Header */}
       <ScoreHeader match={match} />
-
-      {/* Compute Terror Index from match data */}
-      {(() => {
-        const ti = Math.min(100, Math.max(0, 70 * 0.3 + ((match.prediction.expectedHomeGoals + match.prediction.expectedAwayGoals) * 15) * 0.3 + (match.prediction.confidence < 0.6 ? 30 : match.prediction.confidence < 0.7 ? 20 : 10) * 0.2 + 25 * 0.2));
-        const tl = ti >= 85 ? "TOTAL WAR" : ti >= 70 ? "DANGEROUS" : ti >= 50 ? "HEATED" : ti >= 30 ? "WATCHABLE" : "DORMANT";
-        return (
       <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card title="Pre-Match Prediction">
@@ -180,13 +145,11 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
               Confidence: {(match.prediction.confidence * 100).toFixed(0)}% · Entropy: {match.prediction.entropy.toFixed(2)}
             </div>
           </Card>
-
           <Card title="Terror Index">
             <TerrorMeter score={ti} level={tl} />
           </Card>
         </div>
 
-        {/* Power Index */}
         <Card title="Power Index">
           <div className="flex items-center gap-8">
             <div className="flex-1">
@@ -196,8 +159,8 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
                 <span className="text-blue-400 font-bold">{match.awayTeamName}</span>
               </div>
               <div className="h-3 flex rounded-full overflow-hidden bg-zinc-800">
-                <div className="bg-red-500 rounded-l-full transition-all" style={{ width: `${(58.9 / (58.9 + 65.8)) * 100}%` }} />
-                <div className="bg-blue-500 rounded-r-full transition-all" style={{ width: `${(65.8 / (58.9 + 65.8)) * 100}%` }} />
+                <div className="bg-red-500 rounded-l-full" style={{ width: `${(58.9 / (58.9 + 65.8)) * 100}%` }} />
+                <div className="bg-blue-500 rounded-r-full" style={{ width: `${(65.8 / (58.9 + 65.8)) * 100}%` }} />
               </div>
               <div className="flex justify-between mt-1">
                 <span className="text-xs font-mono text-red-400">58.9</span>
@@ -207,17 +170,16 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </div>
         </Card>
 
-        {/* Match Stats */}
         <Card title="Match Intelligence">
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <div className="text-xs text-zinc-600 mb-2 uppercase tracking-widest">Shots & xG</div>
+              <div className="text-xs text-zinc-600 mb-2 uppercase tracking-widest">Shots &amp; xG</div>
               <StatBar label="Shots" home={hf.shots} away={af.shots} />
-              <StatBar label="xG" home={Math.round(hf.xG * 100)} away={Math.round(af.xG * 100)} />
+              <StatBar label="xG (×100)" home={Math.round(hf.xG * 100)} away={Math.round(af.xG * 100)} />
               <StatBar label="Shots On Target" home={hf.shotsOnTarget} away={af.shotsOnTarget} />
             </div>
             <div>
-              <div className="text-xs text-zinc-600 mb-2 uppercase tracking-widest">Possession & Passing</div>
+              <div className="text-xs text-zinc-600 mb-2 uppercase tracking-widest">Possession &amp; Passing</div>
               <StatBar label="Progressive Passes" home={hf.progressivePasses} away={af.progressivePasses} />
               <StatBar label="Progressive Carries" home={hf.progressiveCarries} away={af.progressiveCarries} />
               <StatBar label="Pressures" home={hf.pressures} away={af.pressures} />
@@ -239,10 +201,36 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </div>
         </Card>
 
-        {/* The Terror Verdict */}
-        <AgentVerdict verdict={match.verdict} />
+        {match.verdict && (
+          <div className="rounded-lg border border-red-900/50 bg-gradient-to-br from-red-950/30 to-zinc-900/50 p-5">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-red-500 text-lg">🔴</span>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-red-400">The Terror — Verdict</h3>
+            </div>
+            <div className="text-lg font-bold text-white mb-2">{match.verdict.headline}</div>
+            <div className="text-sm text-zinc-300 leading-relaxed mb-4">{match.verdict.summary}</div>
+            <div className="space-y-2">
+              {match.verdict.keyInsights?.map((insight: string, i: number) => (
+                <div key={i} className="flex items-start gap-2">
+                  <span className="text-red-500 mt-0.5 text-xs">▸</span>
+                  <span className="text-sm text-zinc-300">{insight}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 pt-3 border-t border-zinc-800">
+              <div className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2">Agent Contributions</div>
+              <div className="space-y-1.5">
+                {Object.entries(match.verdict.agentContributions ?? {}).map(([type, text]) => (
+                  <div key={type} className="flex gap-2">
+                    <span className="text-[10px] font-bold uppercase text-zinc-500 w-20 shrink-0">[{type}]</span>
+                    <span className="text-xs text-zinc-400">{String(text).slice(0, 120)}...</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
-        {/* Agent Evidence */}
         <Card title="Agent Evidence">
           <div className="space-y-3 max-h-96 overflow-y-auto">
             {match.allClaims?.map((claim: any, i: number) => (
@@ -258,7 +246,6 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </div>
         </Card>
 
-        {/* Model Details */}
         <div className="grid grid-cols-2 gap-4">
           <Card title="Elo Model">
             <div className="space-y-2 text-xs">
@@ -272,9 +259,9 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
             <div className="space-y-2 text-xs">
               <div className="flex justify-between"><span className="text-zinc-500">Expected Home Goals</span><span className="font-mono text-white">{match.prediction.expectedHomeGoals}</span></div>
               <div className="flex justify-between"><span className="text-zinc-500">Expected Away Goals</span><span className="font-mono text-white">{match.prediction.expectedAwayGoals}</span></div>
-              <div className="flex justify-between"><span className="text-zinc-500">Model Version</span><span className="font-mono text-white">Dixon-Coles ρ=-0.13</span></div>
+              <div className="flex justify-between"><span className="text-zinc-500">Model</span><span className="font-mono text-white">Dixon-Coles ρ=-0.13</span></div>
               <div className="mt-2 pt-2 border-t border-zinc-800">
-                <div className="text-[10px] text-zinc-600 mb-1">Top Score Probabilities</div>
+                <div className="text-[10px] text-zinc-600 mb-1">Top Scores</div>
                 {match.prediction.scoreProbabilities?.slice(0, 3).map((sp: any, i: number) => (
                   <div key={i} className="flex justify-between text-[11px]">
                     <span className="text-zinc-400">{sp.homeGoals}-{sp.awayGoals}</span>
@@ -286,15 +273,12 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </Card>
         </div>
 
-        {/* Footer */}
         <div className="text-center py-6 border-t border-zinc-900">
           <div className="text-[10px] uppercase tracking-widest text-zinc-700">
             FootballTerror · Historical Replay · StatsBomb Open Data
           </div>
         </div>
       </div>
-        );
-      })()}
     </div>
   );
 }

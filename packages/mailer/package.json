@@ -1,5 +1,5 @@
 {
-  "name": "@footballterror/agents",
+  "name": "@footballterror/mailer",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,9 +8,12 @@
   "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
   "scripts": { "build": "tsc", "typecheck": "tsc --noEmit", "clean": "rm -rf dist" },
   "dependencies": {
-    "@footballterror/football-schema": "workspace:*",
+    "@footballterror/config": "workspace:*",
     "@footballterror/logger": "workspace:*",
-    "@footballterror/llm": "workspace:*"
+    "nodemailer": "^6.10.0"
   },
-  "devDependencies": { "typescript": "^5.8.3" }
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
+    "typescript": "^5.8.3"
+  }
 }

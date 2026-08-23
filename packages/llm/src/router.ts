@@ -11,7 +11,7 @@
  * next model in the chain; only when the whole chain fails does the call reject.
  */
 
-import { env, llmChains } from "@footballterror/config";
+import { env, llmChains, computeCostUsd } from "@footballterror/config";
 import { createLogger } from "@footballterror/logger";
 import { nvidiaRateLimiter } from "./nvidia-rate-limiter.js";
 
@@ -56,14 +56,18 @@ export interface CompletionResult {
 interface ChainTarget {
   provider: "openrouter" | "nvidia";
   model: string;
+  inputPerM?: number;
+  outputPerM?: number;
 }
 
 function openRouterChain(): ChainTarget[] {
-  return llmChains.openrouter.map((model: string) => ({ provider: "openrouter" as const, model }));
+  return llmChains.openrouter.map((e: { model: string; inputPerM?: number; outputPerM?: number }) =>
+    ({ provider: "openrouter" as const, model: e.model, inputPerM: e.inputPerM, outputPerM: e.outputPerM }));
 }
 
 function nvidiaChain(): ChainTarget[] {
-  return llmChains.nvidia.map((model: string) => ({ provider: "nvidia" as const, model }));
+  return llmChains.nvidia.map((e: { model: string; inputPerM?: number; outputPerM?: number }) =>
+    ({ provider: "nvidia" as const, model: e.model, inputPerM: e.inputPerM, outputPerM: e.outputPerM }));
 }
 
 function resolveChain(tier: "default" | "small"): ChainTarget[] {
@@ -94,10 +98,11 @@ interface OpenAICompatibleResponse {
 async function callOpenAICompatible(
   baseUrl: string,
   apiKey: string,
-  model: string,
+  target: ChainTarget,
   opts: CompletionOptions,
   isNvidia: boolean
 ): Promise<CompletionResult> {
+  const model = target.model;
   const attempts: { target: string; error?: string }[] = [];
   const maxRetriesOn429 = isNvidia ? 3 : 1;
 
@@ -146,15 +151,17 @@ async function callOpenAICompatible(
     const data = (await resp.json()) as OpenAICompatibleResponse;
     const content = data.choices?.[0]?.message?.content ?? "";
     attempts.push({ target: model });
+    const usage = {
+      promptTokens: data.usage?.prompt_tokens ?? 0,
+      completionTokens: data.usage?.completion_tokens ?? 0,
+      totalTokens: data.usage?.total_tokens ?? 0,
+    };
+    const costUsd = computeCostUsd(usage, target);
     return {
       content,
       servedBy: `${isNvidia ? "nvidia" : "openrouter"}:${model}`,
       attempts,
-      usage: {
-        promptTokens: data.usage?.prompt_tokens ?? 0,
-        completionTokens: data.usage?.completion_tokens ?? 0,
-        totalTokens: data.usage?.total_tokens ?? 0,
-      },
+      usage: costUsd != null ? { ...usage, costUsd } : usage,
     };
   }
 
@@ -190,8 +197,8 @@ export async function complete(opts: CompletionOptions): Promise<CompletionResul
         if (!env.OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY not set");
         const result = await callOpenAICompatible(
           "https://openrouter.ai/api/v1",
-          env.OPENROUTER_API_KEY,
-          target.model,
+          env.OPENROUTER_API_KEY!,
+          target,
           opts,
           false
         );
@@ -202,8 +209,8 @@ export async function complete(opts: CompletionOptions): Promise<CompletionResul
         if (!env.NVIDIA_API_KEY) throw new Error("NVIDIA_API_KEY not set");
         const result = await callOpenAICompatible(
           "https://integrate.api.nvidia.com/v1",
-          env.NVIDIA_API_KEY,
-          target.model,
+          env.NVIDIA_API_KEY!,
+          target,
           opts,
           true
         );

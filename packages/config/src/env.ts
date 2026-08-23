@@ -17,15 +17,51 @@ for (const p of candidates) {
   }
 }
 
-/** Parse an ordered model chain from env vars like PREFIX_MODEL1, PREFIX_MODEL2, ... */
-export function parseModelChain(prefix: string, source: Record<string, string | undefined> = process.env): string[] {
-  const entries: { idx: number; value: string }[] = [];
+/** Parse an ordered model chain from env vars like PREFIX_MODEL1, PREFIX_MODEL2, ...
+ *
+ * Optional pricing suffix in the var name: __INPUT__OUTPUT where underscores are
+ * decimal points. Example:
+ *   OPENROUTER_MODEL2_LAGUNAS__0_09__0_18 = poolside/laguna-s-2.1
+ *   → input $0.09/M tokens, output $0.18/M tokens
+ */
+export interface ModelChainEntry {
+  model: string;
+  /** USD per million input tokens (from var-name pricing suffix) */
+  inputPerM?: number;
+  /** USD per million output tokens */
+  outputPerM?: number;
+}
+
+export function parseModelChain(prefix: string, source: Record<string, string | undefined> = process.env): ModelChainEntry[] {
+  const entries: { idx: number; entry: ModelChainEntry }[] = [];
   for (const [key, value] of Object.entries(source)) {
     if (!value) continue;
     const m = key.match(new RegExp(`^${prefix}MODEL(\\d+)`));
-    if (m) entries.push({ idx: parseInt(m[1]!, 10), value: value! });
+    if (!m) continue;
+
+    let inputPerM: number | undefined;
+    let outputPerM: number | undefined;
+    const priceMatch = key.match(/__([\d]+(?:_[\d]+)?)__([\d]+(?:_[\d]+)?)$/);
+    if (priceMatch) {
+      const parse = (s: string) => parseFloat(s.replace(/_/g, "."));
+      inputPerM = parse(priceMatch[1]!);
+      outputPerM = parse(priceMatch[2]!);
+    }
+
+    entries.push({ idx: parseInt(m[1]!, 10), entry: { model: value!, inputPerM, outputPerM } });
   }
-  return entries.sort((a, b) => a.idx - b.idx).map((e) => e.value);
+  return entries.sort((a, b) => a.idx - b.idx).map((e) => e.entry);
+}
+
+/** Compute USD cost from token counts and per-million pricing */
+export function computeCostUsd(
+  usage: { promptTokens: number; completionTokens: number },
+  pricing?: { inputPerM?: number; outputPerM?: number }
+): number | undefined {
+  if (pricing?.inputPerM == null && pricing?.outputPerM == null) return undefined;
+  const inputCost = ((usage.promptTokens / 1_000_000) * (pricing.inputPerM ?? 0));
+  const outputCost = ((usage.completionTokens / 1_000_000) * (pricing.outputPerM ?? 0));
+  return Math.round((inputCost + outputCost) * 1e6) / 1e6;
 }
 
 export const env = {

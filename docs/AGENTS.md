@@ -876,3 +876,34 @@ When using NVIDIA API models:
 - Log all rate limit waits to the console
 
 This ensures continuous usage without hitting the 40 RPM limit.
+
+## 16. LLM Provider Architecture (Implemented)
+
+### Tiers
+
+| Tier | Provider | Models (fallback order) | Use |
+|------|----------|------------------------|-----|
+| default | OpenRouter | `OPENROUTER_MODEL1` → `MODEL2` → `MODEL3` → `MODEL4` | Heavy reasoning, The Terror synthesis |
+| small | NVIDIA (free) | `NVIDIA_MODEL1` → `NVIDIA_MODEL2` | Simple interpretation tasks |
+
+The router (`packages/llm`) walks the chain in order on failure. Every call
+returns token usage; every model switch is logged.
+
+### NVIDIA API Rate Limiting Rule
+
+When using NVIDIA API models:
+
+- Limit requests to maximum 36 per minute
+- Wait ~1.67 seconds between requests (60/36)
+- If you receive a 429 error, wait 5 seconds before retrying
+- Log all rate limit waits to the console
+
+Implemented in `packages/llm/src/nvidia-rate-limiter.ts`. All "small" tier calls
+route through it automatically.
+
+### Hallucination Defense at the LLM Boundary
+
+- Prompts contain ONLY computed evidence — never raw LLM-generated numbers
+- LLM output is validated JSON: invalid entries are dropped, confidence clamped to [0,1]
+- Claims hard-capped at 400 chars / 6 observations per run
+- On any LLM failure, agents degrade gracefully to deterministic-only observations

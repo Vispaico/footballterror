@@ -1,8 +1,13 @@
 import fs from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001";
-const DATA_DIR = path.resolve(process.cwd(), "../../data/match-output");
+const DATA_DIR = process.env.MATCH_DATA_DIR
+  ? path.resolve(process.env.MATCH_DATA_DIR)
+  : ["../../data/match-output", "../data/match-output", "data/match-output"]
+      .map((p) => path.resolve(process.cwd(), p))
+      .find((p) => existsSync(p)) ?? path.resolve(process.cwd(), "../../data/match-output");
 
 async function getMatch(slug: string) {
   // Try API first, fallback to local file

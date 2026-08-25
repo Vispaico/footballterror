@@ -24,6 +24,20 @@ const MATCH_OUTPUT_DIR = existsSync(path.join(DB_DIR, "match-output"))
 interface StoreEntry { [k: string]: unknown }
 let fixturesCache: StoreEntry[] | null = null;
 let ratingsCache: StoreEntry[] | null = null;
+let dcPredsCache: Map<string, StoreEntry> | null = null;
+
+async function loadDcPreds(): Promise<Map<string, StoreEntry>> {
+  if (dcPredsCache) return dcPredsCache;
+  dcPredsCache = new Map();
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "predictions-dc.jsonl"), "utf-8");
+    for (const line of raw.split("\n").filter(Boolean)) {
+      const p = JSON.parse(line);
+      dcPredsCache.set(String(p.fixtureId), p);
+    }
+  } catch {}
+  return dcPredsCache!;
+}
 
 async function loadFixtures(): Promise<StoreEntry[]> {
   if (fixturesCache) return fixturesCache;
@@ -122,17 +136,39 @@ app.get("/api/match/:slug/prediction", async (req, res) => {
   try {
     const slug = req.params.slug;
     const match = await readMatch(slug);
-    const predsRaw = await fs.readFile(path.join(DB_DIR, "predictions.jsonl"), "utf-8").catch(() => "");
-    const preds = predsRaw.split("\n").filter(Boolean).map((l) => JSON.parse(l));
     const fixtureId = match?.fixture?.id;
-    const pred = preds.find((p: any) => p.fixtureId === fixtureId)
-      ?? preds.find((p: any) => slug && p.fixtureId?.endsWith(slug.slice(0, 12)));
+
+    // Prefer Dixon-Coles snapshot; fall back to elo-v0
+    const dcMap = await loadDcPreds();
+    let pred: any = fixtureId ? dcMap.get(fixtureId) : undefined;
+    if (!pred && fixtureId) {
+      // legacy elo store
+      const predsRaw = await fs.readFile(path.join(DB_DIR, "predictions.jsonl"), "utf-8").catch(() => "");
+      const preds = predsRaw.split("\n").filter(Boolean).map((l) => JSON.parse(l));
+      pred = preds.find((p: any) => p.fixtureId === fixtureId);
+      if (!pred) return res.status(404).json({ error: "Prediction not found" });
+      return res.json({
+        prediction: {
+          homeWin: pred.homeWinProbability,
+          draw: pred.drawProbability,
+          awayWin: pred.awayWinProbability,
+          confidence: pred.confidence,
+          modelVersion: pred.modelVersion,
+          informationCutoff: pred.informationCutoff,
+        },
+        actual: { homeGoals: pred.actualHomeGoals, awayGoals: pred.actualAwayGoals },
+      });
+    }
     if (!pred) return res.status(404).json({ error: "Prediction not found" });
+
     res.json({
       prediction: {
         homeWin: pred.homeWinProbability,
         draw: pred.drawProbability,
         awayWin: pred.awayWinProbability,
+        expectedHomeGoals: pred.expectedHomeGoals,
+        expectedAwayGoals: pred.expectedAwayGoals,
+        topScores: pred.topScores,
         confidence: pred.confidence,
         modelVersion: pred.modelVersion,
         informationCutoff: pred.informationCutoff,
@@ -141,6 +177,16 @@ app.get("/api/match/:slug/prediction", async (req, res) => {
     });
   } catch {
     res.status(500).json({ error: "Failed to load prediction" });
+  }
+});
+
+// ─── Model performance (public transparency, spec §21) ────────────────────────
+app.get("/api/models/performance", async (_req, res) => {
+  try {
+    const evaluation = JSON.parse(await fs.readFile(path.join(DB_DIR, "model-eval.json"), "utf-8"));
+    res.json(evaluation);
+  } catch {
+    res.status(404).json({ error: "No evaluation available yet" });
   }
 });
 

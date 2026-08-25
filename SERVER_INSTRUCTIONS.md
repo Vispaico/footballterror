@@ -109,6 +109,24 @@ In Coolify → footballterror-api → Storage, mount a host directory containing
 
 Pick whichever fits your Coolify setup; Option A keeps everything reproducible from git.
 
+## Step 3b — Migrate data into PostgreSQL
+
+The Coolify `footballterror-db` resource hosts the app's Postgres. Load the bulk store into it:
+
+```bash
+# Get the internal connection string from Coolify → footballterror-db (DATABASE_URL env var),
+# or construct: postgresql://footballterror:<password>@<db-internal-host>:5432/footballterror
+export DATABASE_URL="postgresql://footballterror:<password>@<db-internal-host>:5432/footballterror"
+
+node_modules/.bin/tsx scripts/migrate-to-postgres.ts
+```
+
+Expected output ends with counts: clubs 29, fixtures 418, predictions 776,
+agent_analysis 289. Idempotent — safe to re-run.
+
+(If the local `.env` already has a working DATABASE_URL pointing at the server
+DB, just run `pnpm tsx scripts/migrate-to-postgres.ts` with no export.)
+
 ## Step 4 — Verify deployed API
 
 ```bash

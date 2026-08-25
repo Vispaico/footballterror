@@ -11,6 +11,26 @@ const PORT = parseInt(process.env.PORT ?? "3001", 10);
 const DATA_DIR = path.resolve(process.env.DATA_DIR ?? "../../data");
 const MATCH_OUTPUT_DIR = path.join(DATA_DIR, "match-output");
 
+// ─── Root: API index ──────────────────────────────────────────────────────────
+app.get("/", (_req, res) => {
+  res.json({
+    name: "FootballTerror API",
+    version: "0.1.0",
+    docs: {
+      health: "GET /health",
+      fixtures: "GET /api/fixtures",
+      match: "GET /api/match/:slug",
+      prediction: "GET /api/match/:slug/prediction",
+      agents: "GET /api/match/:slug/agents",
+      features: "GET /api/match/:slug/features",
+      powerIndex: "GET /api/power-index",
+      terrorIndex: "GET /api/terror-index",
+      ingest: "POST /api/ingest",
+    },
+    example: "/api/match/liverpool-arsenal-2016-01-13",
+  });
+});
+
 // ─── Health ───────────────────────────────────────────────────────────────────
 app.get("/health", (_req, res) => {
   res.json({ status: "ok", service: "footballterror-api", version: "0.1.0", uptime: process.uptime() });

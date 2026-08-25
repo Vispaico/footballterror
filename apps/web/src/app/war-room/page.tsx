@@ -18,9 +18,10 @@ async function fetchJson(url: string): Promise<any | null> {
 }
 
 export default async function WarRoom() {
-  const [powerIndex, fixtures] = await Promise.all([
+  const [powerIndex, fixtures, intelligence] = await Promise.all([
     fetchJson(`${API_URL}/api/power-index`),
     fetchJson(`${API_URL}/api/fixtures?limit=500`),
+    fetchJson(`${API_URL}/api/intelligence`),
   ]);
 
   // Local fallbacks if API is down
@@ -119,6 +120,32 @@ export default async function WarRoom() {
                 <div className="mt-2 pt-2 border-t border-zinc-800 flex justify-between text-[9px] text-zinc-600">
                   <span>{m.date}</span>
                   <span className="text-red-500 group-hover:text-red-400 font-bold">Open →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Latest intelligence */}
+        <section>
+          <div className="flex items-baseline justify-between mb-3">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-400">Latest Intelligence</h2>
+            <span className="text-[10px] text-zinc-600 font-mono">{intelligence?.total ?? 0} verdicts · MiniMax-M3</span>
+          </div>
+          <div className="space-y-2">
+            {(intelligence?.verdicts ?? []).slice(0, 6).map((v: any) => (
+              <a key={v.fixtureId} href={`/match/${v.slug}`}
+                className="group flex items-start gap-4 rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3 hover:border-red-900/60 hover:bg-zinc-900/70 transition-all">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span className="text-red-500 text-[10px]">🔴</span>
+                    <span className="text-xs font-bold text-white group-hover:text-red-400 transition-colors truncate">{v.headline}</span>
+                  </div>
+                  {v.fixture && (
+                    <div className="text-[10px] text-zinc-600">
+                      {v.fixture.homeTeamName} {v.fixture.homeScore}-{v.fixture.awayScore} {v.fixture.awayTeamName} · {v.date} · {v.claimCount} agent claims
+                    </div>
+                  )}
                 </div>
               </a>
             ))}

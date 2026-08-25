@@ -25,6 +25,20 @@ interface StoreEntry { [k: string]: unknown }
 let fixturesCache: StoreEntry[] | null = null;
 let ratingsCache: StoreEntry[] | null = null;
 let dcPredsCache: Map<string, StoreEntry> | null = null;
+let agentAnalysisCache: Map<string, StoreEntry> | null = null;
+
+async function loadAgentAnalysis(): Promise<Map<string, StoreEntry>> {
+  if (agentAnalysisCache) return agentAnalysisCache;
+  agentAnalysisCache = new Map();
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "agent-analysis.jsonl"), "utf-8");
+    for (const line of raw.split("\n").filter(Boolean)) {
+      const a = JSON.parse(line);
+      if (a.fixtureId) agentAnalysisCache.set(String(a.fixtureId), a);
+    }
+  } catch {}
+  return agentAnalysisCache!;
+}
 
 async function loadDcPreds(): Promise<Map<string, StoreEntry>> {
   if (dcPredsCache) return dcPredsCache;
@@ -204,14 +218,60 @@ app.get("/api/match/:slug/agents", async (req, res) => {
   try {
     const match = await readMatch(req.params.slug);
     if (!match) return res.status(404).json({ error: "Match not found" });
+    const fixtureId = match.fixture?.id;
+
+    // Prefer LLM-generated analysis
+    const analysis = await loadAgentAnalysis();
+    const llm = fixtureId ? analysis.get(fixtureId) : undefined;
+    if (llm) {
+      return res.json({
+        verdict: llm.verdict ?? null,
+        claims: llm.claims ?? [],
+        source: "minimax-m3",
+      });
+    }
+
+    // Deterministic fallback (the original demo match)
     res.json({
       verdict: match.verdict ?? null,
       claims: match.allClaims ?? [],
       runs: match.agentRuns ?? [],
-      note: match.verdict ? undefined : "Agent analysis not yet generated for this match",
+      source: match.allClaims ? "deterministic-v0" : null,
+      note: match.allClaims ? undefined : "No agent analysis available for this match",
     });
   } catch {
     res.status(500).json({ error: "Failed to load agents" });
+  }
+});
+
+// ─── Intelligence feed: latest Terror verdicts ────────────────────────────────
+app.get("/api/intelligence", async (_req, res) => {
+  try {
+    const analysis = await loadAgentAnalysis();
+    const all = await loadFixtures();
+    const byId = new Map(all.map((f: any) => [f.id, f]));
+    const verdicts = [...analysis.values()]
+      .filter((a: any) => a.verdict)
+      .map((a: any) => ({
+        fixtureId: a.fixtureId,
+        slug: a.slug,
+        date: a.date,
+        headline: a.verdict.headline,
+        summary: a.verdict.summary,
+        keyInsights: a.verdict.keyInsights,
+        claimCount: (a.claims ?? []).length,
+        fixture: byId.get(a.fixtureId) ? {
+          homeTeamName: byId.get(a.fixtureId)!.homeTeamName,
+          awayTeamName: byId.get(a.fixtureId)!.awayTeamName,
+          homeScore: byId.get(a.fixtureId)!.homeScore,
+          awayScore: byId.get(a.fixtureId)!.awayScore,
+          season: byId.get(a.fixtureId)!.season,
+        } : null,
+      }))
+      .sort((x, y) => String(y.date).localeCompare(String(x.date)));
+    res.json({ total: verdicts.length, verdicts });
+  } catch {
+    res.status(500).json({ error: "Failed to load intelligence" });
   }
 });
 

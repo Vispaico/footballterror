@@ -42,8 +42,8 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="/match/liverpool-arsenal-2016-01-13" className="group relative inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_40px_rgba(220,38,38,0.3)]">
-              See the Match Room
+            <a href="/war-room" className="group relative inline-flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_40px_rgba(220,38,38,0.3)]">
+              Enter the War Room
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
             </a>
             <a href="#how-it-works" className="inline-flex items-center gap-2 border border-zinc-700 hover:border-zinc-500 text-zinc-300 font-medium px-8 py-4 rounded-lg transition-colors">
@@ -278,8 +278,9 @@ export default function LandingPage() {
             <span className="text-lg font-black text-white">Football<span className="text-red-500">Terror</span></span>
           </div>
           <div className="flex items-center gap-6 text-sm text-zinc-600">
-            <a href="/match/liverpool-arsenal-2016-01-13" className="hover:text-white transition-colors">Demo</a>
-            <a href="https://api.footballterror.com" className="hover:text-white transition-colors">API</a>
+            <a href="/war-room" className="hover:text-white transition-colors">War Room</a>
+            <a href="/match/liverpool-arsenal-2016-01-13" className="hover:text-white transition-colors">Match Room</a>
+            <a href="https://api.footballterror.com/api/models/performance" className="hover:text-white transition-colors">Model Performance</a>
             <a href="https://github.com/Vispaico/footballterror" className="hover:text-white transition-colors">GitHub</a>
           </div>
           <div className="text-xs text-zinc-700">

@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import fs from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 
 const app = express();
@@ -8,135 +9,178 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = parseInt(process.env.PORT ?? "3001", 10);
-const DATA_DIR = path.resolve(process.env.DATA_DIR ?? "../../data");
-const MATCH_OUTPUT_DIR = path.join(DATA_DIR, "match-output");
+
+// Data roots: bulk JSONL store + legacy match-output dir
+const DATA_DIR = process.env.DATA_DIR
+  ? (path.isAbsolute(process.env.DATA_DIR) ? process.env.DATA_DIR : path.resolve(process.cwd(), process.env.DATA_DIR))
+  : [path.resolve(process.cwd(), "../../data"), path.resolve(process.cwd(), "../data"), path.resolve("/app/data")]
+      .find((p) => existsSync(p)) ?? path.resolve(process.cwd(), "../../data");
+const DB_DIR = path.join(DATA_DIR, "db");
+const MATCH_OUTPUT_DIR = existsSync(path.join(DB_DIR, "match-output"))
+  ? path.join(DB_DIR, "match-output")
+  : path.join(DATA_DIR, "match-output");
+
+// ─── Cached bulk store ────────────────────────────────────────────────────────
+interface StoreEntry { [k: string]: unknown }
+let fixturesCache: StoreEntry[] | null = null;
+let ratingsCache: StoreEntry[] | null = null;
+
+async function loadFixtures(): Promise<StoreEntry[]> {
+  if (fixturesCache) return fixturesCache;
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "fixtures.jsonl"), "utf-8");
+    fixturesCache = raw.split("\n").filter(Boolean).map((l) => JSON.parse(l));
+  } catch {
+    fixturesCache = [];
+  }
+  return fixturesCache!;
+}
+
+async function loadRatings(): Promise<StoreEntry[]> {
+  if (ratingsCache) return ratingsCache;
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "final-ratings.json"), "utf-8");
+    ratingsCache = JSON.parse(raw);
+  } catch {
+    ratingsCache = [];
+  }
+  return ratingsCache!;
+}
 
 // ─── Root: API index ──────────────────────────────────────────────────────────
 app.get("/", (_req, res) => {
   res.json({
     name: "FootballTerror API",
-    version: "0.1.0",
+    version: "0.2.0",
     docs: {
       health: "GET /health",
-      fixtures: "GET /api/fixtures",
+      fixtures: "GET /api/fixtures?season=&team=",
       match: "GET /api/match/:slug",
       prediction: "GET /api/match/:slug/prediction",
       agents: "GET /api/match/:slug/agents",
       features: "GET /api/match/:slug/features",
       powerIndex: "GET /api/power-index",
-      terrorIndex: "GET /api/terror-index",
-      ingest: "POST /api/ingest",
     },
-    example: "/api/match/liverpool-arsenal-2016-01-13",
+    example: "/api/match/liverpool-vs-arsenal-2016-01-13",
   });
 });
 
 // ─── Health ───────────────────────────────────────────────────────────────────
 app.get("/health", (_req, res) => {
-  res.json({ status: "ok", service: "footballterror-api", version: "0.1.0", uptime: process.uptime() });
+  res.json({ status: "ok", service: "footballterror-api", version: "0.2.0", uptime: Math.round(process.uptime()) });
 });
 
-// ─── Fixtures ─────────────────────────────────────────────────────────────────
-app.get("/api/fixtures", async (_req, res) => {
-  try {
-    const files = await fs.readdir(MATCH_OUTPUT_DIR).catch(() => []);
-    const fixtures = [];
-    for (const file of files.filter(f => f.endsWith(".json"))) {
-      const data = JSON.parse(await fs.readFile(path.join(MATCH_OUTPUT_DIR, file), "utf-8"));
-      fixtures.push({
-        slug: data.fixture.slug,
-        homeTeam: data.fixture.homeTeamName,
-        awayTeam: data.fixture.awayTeamName,
-        homeScore: data.fixture.homeScore,
-        awayScore: data.fixture.awayScore,
-        date: data.fixture.date,
-        competition: data.fixture.competition,
-        status: data.fixture.status,
-      });
-    }
-    res.json({ fixtures, total: fixtures.length });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to load fixtures" });
+// ─── Fixtures (bulk, filterable) ─────────────────────────────────────────────
+app.get("/api/fixtures", async (req, res) => {
+  const all = await loadFixtures();
+  let items = all;
+  const { season, team, limit } = req.query as { season?: string; team?: string; limit?: string };
+
+  if (season) items = items.filter((f) => f.season === season);
+  if (team) {
+    const t = String(team).toLowerCase();
+    items = items.filter(
+      (f) => String(f.homeTeamName).toLowerCase().includes(t) || String(f.awayTeamName).toLowerCase().includes(t)
+    );
   }
+
+  // Newest first for browsing
+  items = [...items].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+
+  const lim = limit ? Math.min(parseInt(String(limit), 10) || 50, 500) : undefined;
+  res.json({
+    total: items.length,
+    fixtures: lim ? items.slice(0, lim) : items,
+    seasons: [...new Set(all.map((f) => f.season))].sort(),
+  });
 });
 
-// ─── Single Match ─────────────────────────────────────────────────────────────
+// ─── Single Match (bulk payload first, legacy fallback) ──────────────────────
+async function readMatch(slug: string): Promise<any | null> {
+  const bulkPath = path.join(MATCH_OUTPUT_DIR, `${slug}.json`);
+  if (existsSync(bulkPath)) {
+    return JSON.parse(await fs.readFile(bulkPath, "utf-8"));
+  }
+  const legacyPath = path.join(DATA_DIR, "match-output", `${slug}.json`);
+  if (existsSync(legacyPath)) {
+    return JSON.parse(await fs.readFile(legacyPath, "utf-8"));
+  }
+  return null;
+}
+
 app.get("/api/match/:slug", async (req, res) => {
   try {
-    const filePath = path.join(MATCH_OUTPUT_DIR, `${req.params.slug}.json`);
-    const data = JSON.parse(await fs.readFile(filePath, "utf-8"));
-    res.json(data);
+    const match = await readMatch(req.params.slug);
+    if (!match) return res.status(404).json({ error: "Match not found" });
+    res.json(match);
   } catch {
-    res.status(404).json({ error: "Match not found" });
+    res.status(500).json({ error: "Failed to load match" });
   }
 });
 
-// ─── Match Prediction ─────────────────────────────────────────────────────────
 app.get("/api/match/:slug/prediction", async (req, res) => {
   try {
-    const data = JSON.parse(await fs.readFile(path.join(MATCH_OUTPUT_DIR, `${req.params.slug}.json`), "utf-8"));
+    const slug = req.params.slug;
+    const match = await readMatch(slug);
+    const predsRaw = await fs.readFile(path.join(DB_DIR, "predictions.jsonl"), "utf-8").catch(() => "");
+    const preds = predsRaw.split("\n").filter(Boolean).map((l) => JSON.parse(l));
+    const fixtureId = match?.fixture?.id;
+    const pred = preds.find((p: any) => p.fixtureId === fixtureId)
+      ?? preds.find((p: any) => slug && p.fixtureId?.endsWith(slug.slice(0, 12)));
+    if (!pred) return res.status(404).json({ error: "Prediction not found" });
     res.json({
-      prediction: data.prediction,
-      elo: data.elo,
-      powerIndex: { home: 58.9, away: 65.8 }, // TODO: compute from features
-      terrorIndex: { score: 41.3, level: "WATCHABLE" }, // TODO: compute
+      prediction: {
+        homeWin: pred.homeWinProbability,
+        draw: pred.drawProbability,
+        awayWin: pred.awayWinProbability,
+        confidence: pred.confidence,
+        modelVersion: pred.modelVersion,
+        informationCutoff: pred.informationCutoff,
+      },
+      actual: { homeGoals: pred.actualHomeGoals, awayGoals: pred.actualAwayGoals },
     });
   } catch {
-    res.status(404).json({ error: "Match not found" });
+    res.status(500).json({ error: "Failed to load prediction" });
   }
 });
 
-// ─── Match Agents ─────────────────────────────────────────────────────────────
-app.get("/api/match/:slug/agents", async (req, res) => {
-  try {
-    const data = JSON.parse(await fs.readFile(path.join(MATCH_OUTPUT_DIR, `${req.params.slug}.json`), "utf-8"));
-    res.json({
-      verdict: data.verdict,
-      claims: data.allClaims,
-      runs: data.agentRuns?.map((r: any) => ({
-        agentType: r.agentType,
-        status: r.status,
-        startedAt: r.startedAt,
-        completedAt: r.completedAt,
-      })),
-    });
-  } catch {
-    res.status(404).json({ error: "Match not found" });
-  }
-});
-
-// ─── Match Features ───────────────────────────────────────────────────────────
 app.get("/api/match/:slug/features", async (req, res) => {
   try {
-    const data = JSON.parse(await fs.readFile(path.join(MATCH_OUTPUT_DIR, `${req.params.slug}.json`), "utf-8"));
-    res.json({
-      home: data.homeFeatures,
-      away: data.awayFeatures,
-    });
+    const match = await readMatch(req.params.slug);
+    if (!match) return res.status(404).json({ error: "Match not found" });
+    res.json({ home: match.homeFeatures, away: match.awayFeatures });
   } catch {
-    res.status(404).json({ error: "Match not found" });
+    res.status(500).json({ error: "Failed to load features" });
   }
 });
 
-// ─── Power Index ──────────────────────────────────────────────────────────────
+app.get("/api/match/:slug/agents", async (req, res) => {
+  try {
+    const match = await readMatch(req.params.slug);
+    if (!match) return res.status(404).json({ error: "Match not found" });
+    res.json({
+      verdict: match.verdict ?? null,
+      claims: match.allClaims ?? [],
+      runs: match.agentRuns ?? [],
+      note: match.verdict ? undefined : "Agent analysis not yet generated for this match",
+    });
+  } catch {
+    res.status(500).json({ error: "Failed to load agents" });
+  }
+});
+
+// ─── Power Index (from real Elo history) ─────────────────────────────────────
 app.get("/api/power-index", async (_req, res) => {
-  // TODO: compute from database
-  res.json({ teams: [], computedAt: new Date().toISOString() });
-});
-
-// ─── Terror Index ─────────────────────────────────────────────────────────────
-app.get("/api/terror-index", async (_req, res) => {
-  // TODO: compute from database
-  res.json({ matches: [], computedAt: new Date().toISOString() });
-});
-
-// ─── Ingestion Trigger ────────────────────────────────────────────────────────
-app.post("/api/ingest", async (req, res) => {
-  // TODO: trigger ingestion pipeline
-  res.json({ status: "not_implemented", message: "Ingestion pipeline not yet wired to API" });
+  const ratings = await loadRatings();
+  res.json({
+    model: "elo-replay-v0",
+    computedAt: new Date().toISOString(),
+    teams: ratings.map((r: any) => ({ teamId: r.teamId, name: r.name, score: r.rating })),
+  });
 });
 
 app.listen(PORT, () => {
   console.log(`FootballTerror API running on port ${PORT}`);
-  console.log(`Data directory: ${MATCH_OUTPUT_DIR}`);
+  console.log(`DB dir: ${DB_DIR}`);
+  console.log(`Match output: ${MATCH_OUTPUT_DIR}`);
 });

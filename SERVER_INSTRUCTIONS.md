@@ -25,9 +25,21 @@ If pnpm is missing: `corepack enable && corepack prepare pnpm@11.20.0 --activate
 pnpm install --frozen-lockfile
 ```
 
-## Step 2 — Run ingestion + model fitting locally on the server
+## Step 2 — Data (already committed — verify only)
 
-The bulk data files (fixtures.jsonl etc.) are generated from StatsBomb open-data files. The repo does NOT track them (they're in .gitignore). Regenerate:
+All derived bulk data is committed to `main` under `data/db/`:
+fixtures.jsonl (418), predictions-dc.jsonl (358), dc-params.json,
+model-eval.json, final-ratings.json, and 418 Match Room payloads.
+
+Verify after pulling:
+
+```bash
+wc -l data/db/fixtures.jsonl          # expect 418
+cat data/db/model-eval.json           # DC accuracy ~45.8%, Brier ~0.644
+```
+
+(To regenerate from scratch instead, see scripts/ingest-history.ts and
+scripts/fit-dixon-coles.ts — requires downloading StatsBomb event files.)
 
 ```bash
 # Download StatsBomb match lists for PL seasons

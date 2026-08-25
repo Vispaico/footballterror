@@ -1,4 +1,5 @@
 import express from "express";
+import { accountsRouter } from "./routes/accounts.js";
 import cors from "cors";
 import fs from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -7,6 +8,7 @@ import path from "node:path";
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use("/api/account", accountsRouter);
 
 const PORT = parseInt(process.env.PORT ?? "3001", 10);
 
@@ -37,7 +39,11 @@ async function loadRatingsByFixture(): Promise<Map<string, { home: StoreEntry; a
       const r = JSON.parse(line);
       if (!r.fixtureId) continue;
       let entry = ratingsByFixtureCache.get(String(r.fixtureId));
-      if (!entry) { entry = {} as any; ratingsByFixtureCache.set(String(r.fixtureId), entry); }
+      if (!entry) {
+        const fresh: { home: StoreEntry; away: StoreEntry } = { home: null as any, away: null as any };
+        ratingsByFixtureCache.set(String(r.fixtureId), fresh);
+        entry = fresh;
+      }
       // First row per fixture is home (ingest order), second is away
       if (!(entry as any).home) (entry as any).home = r;
       else (entry as any).away = r;
@@ -125,6 +131,9 @@ app.get("/", (_req, res) => {
       agents: "GET /api/match/:slug/agents",
       features: "GET /api/match/:slug/features",
       powerIndex: "GET /api/power-index",
+      intelligence: "GET /api/intelligence",
+      models: "GET /api/models/performance",
+      account: "POST /api/account/register|login|logout · GET /me · follows · alerts",
     },
     example: "/api/match/liverpool-vs-arsenal-2016-01-13",
   });

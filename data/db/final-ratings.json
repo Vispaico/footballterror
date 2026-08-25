@@ -1,0 +1,147 @@
+[
+  {
+    "teamId": "ft:statsbomb:22",
+    "name": "Leicester City",
+    "rating": 1672
+  },
+  {
+    "teamId": "ft:statsbomb:1",
+    "name": "Arsenal",
+    "rating": 1644
+  },
+  {
+    "teamId": "ft:statsbomb:38",
+    "name": "Tottenham Hotspur",
+    "rating": 1598
+  },
+  {
+    "teamId": "ft:statsbomb:25",
+    "name": "Southampton",
+    "rating": 1592
+  },
+  {
+    "teamId": "ft:statsbomb:39",
+    "name": "Manchester United",
+    "rating": 1577
+  },
+  {
+    "teamId": "ft:statsbomb:40",
+    "name": "West Ham United",
+    "rating": 1568
+  },
+  {
+    "teamId": "ft:statsbomb:36",
+    "name": "Manchester City",
+    "rating": 1560
+  },
+  {
+    "teamId": "ft:statsbomb:24",
+    "name": "Liverpool",
+    "rating": 1550
+  },
+  {
+    "teamId": "ft:statsbomb:33",
+    "name": "Chelsea",
+    "rating": 1524
+  },
+  {
+    "teamId": "ft:statsbomb:105",
+    "name": "Portsmouth",
+    "rating": 1511
+  },
+  {
+    "teamId": "ft:statsbomb:26",
+    "name": "Swansea City",
+    "rating": 1507
+  },
+  {
+    "teamId": "ft:statsbomb:55",
+    "name": "Fulham",
+    "rating": 1497
+  },
+  {
+    "teamId": "ft:statsbomb:328",
+    "name": "Bolton Wanderers",
+    "rating": 1497
+  },
+  {
+    "teamId": "ft:statsbomb:54",
+    "name": "Birmingham City",
+    "rating": 1496
+  },
+  {
+    "teamId": "ft:statsbomb:75",
+    "name": "Charlton Athletic",
+    "rating": 1495
+  },
+  {
+    "teamId": "ft:statsbomb:30",
+    "name": "Stoke City",
+    "rating": 1486
+  },
+  {
+    "teamId": "ft:statsbomb:98",
+    "name": "Blackburn Rovers",
+    "rating": 1482
+  },
+  {
+    "teamId": "ft:statsbomb:46",
+    "name": "Wolverhampton Wanderers",
+    "rating": 1481
+  },
+  {
+    "teamId": "ft:statsbomb:101",
+    "name": "Leeds United",
+    "rating": 1479
+  },
+  {
+    "teamId": "ft:statsbomb:41",
+    "name": "Sunderland",
+    "rating": 1479
+  },
+  {
+    "teamId": "ft:statsbomb:47",
+    "name": "Middlesbrough",
+    "rating": 1474
+  },
+  {
+    "teamId": "ft:statsbomb:29",
+    "name": "Everton",
+    "rating": 1467
+  },
+  {
+    "teamId": "ft:statsbomb:27",
+    "name": "West Bromwich Albion",
+    "rating": 1453
+  },
+  {
+    "teamId": "ft:statsbomb:37",
+    "name": "Newcastle United",
+    "rating": 1442
+  },
+  {
+    "teamId": "ft:statsbomb:28",
+    "name": "AFC Bournemouth",
+    "rating": 1439
+  },
+  {
+    "teamId": "ft:statsbomb:23",
+    "name": "Watford",
+    "rating": 1435
+  },
+  {
+    "teamId": "ft:statsbomb:31",
+    "name": "Crystal Palace",
+    "rating": 1424
+  },
+  {
+    "teamId": "ft:statsbomb:56",
+    "name": "Norwich City",
+    "rating": 1380
+  },
+  {
+    "teamId": "ft:statsbomb:59",
+    "name": "Aston Villa",
+    "rating": 1290
+  }
+]

@@ -19,6 +19,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Load .env from repo root
+{
+  const envPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../.env");
+  if (fs.existsSync(envPath)) {
+    for (const line of fs.readFileSync(envPath, "utf8").split("\n")) {
+      const m = line.match(/^([A-Z_0-9]+)=(.*)$/);
+      if (m && !process.env[m[1]!]) process.env[m[1]!] = m[2]!;
+    }
+  }
+}
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DB_DIR = path.join(ROOT, "data/db");
@@ -28,7 +39,7 @@ const EVENTS_DIR = path.join(ROOT, "data/statsbomb/data/events");
 
 const API_KEY = process.env.MINIMAX_API_KEY ?? process.env.OPENROUTER_API_KEY;
 const BASE_URL = process.env.MINIMAX_BASE_URL ?? "https://api.minimax.io/v1";
-const MODEL = process.env.MINIMAX_MODEL ?? "MiniMax-M3";
+const MODEL = process.env.MINIMAX_MODEL1 ?? process.env.MINIMAX_MODEL ?? "MiniMaxAI/MiniMax-M3";
 const DELAY_MS = parseInt(process.env.AGENT_BATCH_DELAY_MS ?? "2000", 10);
 const FORCE = process.env.FORCE === "1";
 

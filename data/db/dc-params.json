@@ -1,0 +1,124 @@
+{
+  "fittedAt": "2026-08-25T07:12:43.843Z",
+  "matchesUsed": 418,
+  "homeAdvantage": 0.21,
+  "rho": -0.1,
+  "teams": {
+    "ft:statsbomb:1": {
+      "attack": 0.4434,
+      "defence": -0.42
+    },
+    "ft:statsbomb:29": {
+      "attack": 0.3434,
+      "defence": 0.08
+    },
+    "ft:statsbomb:47": {
+      "attack": -0.3766,
+      "defence": 0.84
+    },
+    "ft:statsbomb:59": {
+      "attack": -0.4766,
+      "defence": 0.36
+    },
+    "ft:statsbomb:36": {
+      "attack": 0.5034,
+      "defence": -0.16
+    },
+    "ft:statsbomb:105": {
+      "attack": 0.3234,
+      "defence": -0.54
+    },
+    "ft:statsbomb:39": {
+      "attack": 0.1234,
+      "defence": -0.42
+    },
+    "ft:statsbomb:37": {
+      "attack": 0.0434,
+      "defence": 0.22
+    },
+    "ft:statsbomb:24": {
+      "attack": 0.4034,
+      "defence": 0.04
+    },
+    "ft:statsbomb:33": {
+      "attack": 0.3234,
+      "defence": 0.06
+    },
+    "ft:statsbomb:75": {
+      "attack": 0.3234,
+      "defence": -0.14
+    },
+    "ft:statsbomb:101": {
+      "attack": -0.3766,
+      "defence": 0.88
+    },
+    "ft:statsbomb:38": {
+      "attack": 0.4834,
+      "defence": -0.3
+    },
+    "ft:statsbomb:54": {
+      "attack": -0.9366,
+      "defence": -0.14
+    },
+    "ft:statsbomb:55": {
+      "attack": -0.9366,
+      "defence": -0.88
+    },
+    "ft:statsbomb:22": {
+      "attack": 0.4434,
+      "defence": -0.32
+    },
+    "ft:statsbomb:98": {
+      "attack": -0.9366,
+      "defence": -0.14
+    },
+    "ft:statsbomb:328": {
+      "attack": 0.3034,
+      "defence": -0.14
+    },
+    "ft:statsbomb:46": {
+      "attack": -0.3766,
+      "defence": 0.54
+    },
+    "ft:statsbomb:25": {
+      "attack": 0.2634,
+      "defence": -0.2
+    },
+    "ft:statsbomb:41": {
+      "attack": 0.1234,
+      "defence": 0.2
+    },
+    "ft:statsbomb:23": {
+      "attack": -0.0566,
+      "defence": -0.02
+    },
+    "ft:statsbomb:56": {
+      "attack": -0.0766,
+      "defence": 0.26
+    },
+    "ft:statsbomb:31": {
+      "attack": -0.0966,
+      "defence": 0
+    },
+    "ft:statsbomb:28": {
+      "attack": 0.0634,
+      "defence": 0.28
+    },
+    "ft:statsbomb:26": {
+      "attack": -0.0166,
+      "defence": 0.02
+    },
+    "ft:statsbomb:40": {
+      "attack": 0.4234,
+      "defence": 0.02
+    },
+    "ft:statsbomb:30": {
+      "attack": -0.0366,
+      "defence": 0.06
+    },
+    "ft:statsbomb:27": {
+      "attack": -0.2366,
+      "defence": -0.08
+    }
+  }
+}

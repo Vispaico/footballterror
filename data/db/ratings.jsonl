@@ -1,0 +1,836 @@
+{"fixtureId":"ft:statsbomb:3749493","date":"2003-08-16","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1500,"postRating":1512,"delta":11.5}
+{"fixtureId":"ft:statsbomb:3749493","date":"2003-08-16","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1500,"postRating":1488,"delta":-11.5}
+{"fixtureId":"ft:statsbomb:3749358","date":"2003-08-24","teamId":"ft:statsbomb:47","teamName":"Middlesbrough","preRating":1500,"postRating":1480,"delta":-20}
+{"fixtureId":"ft:statsbomb:3749358","date":"2003-08-24","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1512,"postRating":1532,"delta":20}
+{"fixtureId":"ft:statsbomb:3749108","date":"2003-08-27","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1532,"postRating":1542,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3749108","date":"2003-08-27","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1500,"postRating":1490,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3749454","date":"2003-08-31","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1500,"postRating":1481,"delta":-18.7}
+{"fixtureId":"ft:statsbomb:3749454","date":"2003-08-31","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1542,"postRating":1560,"delta":18.7}
+{"fixtureId":"ft:statsbomb:3749296","date":"2003-09-13","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1560,"postRating":1553,"delta":-6.9}
+{"fixtureId":"ft:statsbomb:3749296","date":"2003-09-13","teamId":"ft:statsbomb:105","teamName":"Portsmouth","preRating":1500,"postRating":1507,"delta":6.9}
+{"fixtureId":"ft:statsbomb:3749552","date":"2003-09-21","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1500,"postRating":1498,"delta":-2.1}
+{"fixtureId":"ft:statsbomb:3749552","date":"2003-09-21","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1553,"postRating":1556,"delta":2.1}
+{"fixtureId":"ft:statsbomb:3749528","date":"2003-09-26","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1556,"postRating":1565,"delta":9.3}
+{"fixtureId":"ft:statsbomb:3749528","date":"2003-09-26","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1500,"postRating":1491,"delta":-9.3}
+{"fixtureId":"ft:statsbomb:3749253","date":"2003-10-04","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1500,"postRating":1482,"delta":-17.6}
+{"fixtureId":"ft:statsbomb:3749253","date":"2003-10-04","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1565,"postRating":1582,"delta":17.6}
+{"fixtureId":"ft:statsbomb:3749079","date":"2003-10-18","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1582,"postRating":1591,"delta":8.3}
+{"fixtureId":"ft:statsbomb:3749079","date":"2003-10-18","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1500,"postRating":1492,"delta":-8.3}
+{"fixtureId":"ft:statsbomb:3749526","date":"2003-10-26","teamId":"ft:statsbomb:75","teamName":"Charlton Athletic","preRating":1500,"postRating":1500,"delta":-0.4}
+{"fixtureId":"ft:statsbomb:3749526","date":"2003-10-26","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1591,"postRating":1591,"delta":0.4}
+{"fixtureId":"ft:statsbomb:3749346","date":"2003-11-01","teamId":"ft:statsbomb:101","teamName":"Leeds United","preRating":1500,"postRating":1484,"delta":-16.4}
+{"fixtureId":"ft:statsbomb:3749346","date":"2003-11-01","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1591,"postRating":1608,"delta":16.4}
+{"fixtureId":"ft:statsbomb:3749196","date":"2003-11-08","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1608,"postRating":1615,"delta":7.4}
+{"fixtureId":"ft:statsbomb:3749196","date":"2003-11-08","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1500,"postRating":1493,"delta":-7.4}
+{"fixtureId":"ft:statsbomb:3749434","date":"2003-11-22","teamId":"ft:statsbomb:54","teamName":"Birmingham City","preRating":1500,"postRating":1485,"delta":-15.3}
+{"fixtureId":"ft:statsbomb:3749434","date":"2003-11-22","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1615,"postRating":1630,"delta":15.3}
+{"fixtureId":"ft:statsbomb:3749192","date":"2003-11-30","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1630,"postRating":1621,"delta":-9.3}
+{"fixtureId":"ft:statsbomb:3749192","date":"2003-11-30","teamId":"ft:statsbomb:55","teamName":"Fulham","preRating":1500,"postRating":1509,"delta":9.3}
+{"fixtureId":"ft:statsbomb:3749590","date":"2003-12-06","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1500,"postRating":1501,"delta":1}
+{"fixtureId":"ft:statsbomb:3749590","date":"2003-12-06","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1621,"postRating":1620,"delta":-1}
+{"fixtureId":"ft:statsbomb:3749360","date":"2003-12-14","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1620,"postRating":1627,"delta":7}
+{"fixtureId":"ft:statsbomb:3749360","date":"2003-12-14","teamId":"ft:statsbomb:98","teamName":"Blackburn Rovers","preRating":1500,"postRating":1493,"delta":-7}
+{"fixtureId":"ft:statsbomb:3749278","date":"2003-12-20","teamId":"ft:statsbomb:328","teamName":"Bolton Wanderers","preRating":1500,"postRating":1501,"delta":1.2}
+{"fixtureId":"ft:statsbomb:3749278","date":"2003-12-20","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1627,"postRating":1626,"delta":-1.2}
+{"fixtureId":"ft:statsbomb:3749522","date":"2003-12-26","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1626,"postRating":1633,"delta":6.9}
+{"fixtureId":"ft:statsbomb:3749522","date":"2003-12-26","teamId":"ft:statsbomb:46","teamName":"Wolverhampton Wanderers","preRating":1500,"postRating":1493,"delta":-6.9}
+{"fixtureId":"ft:statsbomb:3749310","date":"2003-12-29","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1500,"postRating":1486,"delta":-14.5}
+{"fixtureId":"ft:statsbomb:3749310","date":"2003-12-29","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1633,"postRating":1647,"delta":14.5}
+{"fixtureId":"ft:statsbomb:3749117","date":"2004-01-07","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1488,"postRating":1491,"delta":2.7}
+{"fixtureId":"ft:statsbomb:3749117","date":"2004-01-07","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1647,"postRating":1645,"delta":-2.7}
+{"fixtureId":"ft:statsbomb:3749153","date":"2004-01-10","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1645,"postRating":1650,"delta":5.7}
+{"fixtureId":"ft:statsbomb:3749153","date":"2004-01-10","teamId":"ft:statsbomb:47","teamName":"Middlesbrough","preRating":1480,"postRating":1474,"delta":-5.7}
+{"fixtureId":"ft:statsbomb:3749133","date":"2004-01-18","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1490,"postRating":1477,"delta":-13.2}
+{"fixtureId":"ft:statsbomb:3749133","date":"2004-01-18","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1650,"postRating":1664,"delta":13.2}
+{"fixtureId":"ft:statsbomb:3749233","date":"2004-02-01","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1664,"postRating":1669,"delta":5.3}
+{"fixtureId":"ft:statsbomb:3749233","date":"2004-02-01","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1481,"postRating":1476,"delta":-5.3}
+{"fixtureId":"ft:statsbomb:3749052","date":"2004-02-07","teamId":"ft:statsbomb:46","teamName":"Wolverhampton Wanderers","preRating":1493,"postRating":1481,"delta":-12.6}
+{"fixtureId":"ft:statsbomb:3749052","date":"2004-02-07","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1669,"postRating":1681,"delta":12.6}
+{"fixtureId":"ft:statsbomb:3749631","date":"2004-02-10","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1681,"postRating":1686,"delta":4.9}
+{"fixtureId":"ft:statsbomb:3749631","date":"2004-02-10","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1486,"postRating":1481,"delta":-4.9}
+{"fixtureId":"ft:statsbomb:3749276","date":"2004-02-21","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1492,"postRating":1480,"delta":-11.7}
+{"fixtureId":"ft:statsbomb:3749276","date":"2004-02-21","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1686,"postRating":1698,"delta":11.7}
+{"fixtureId":"ft:statsbomb:3749642","date":"2004-02-28","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1698,"postRating":1703,"delta":4.9}
+{"fixtureId":"ft:statsbomb:3749642","date":"2004-02-28","teamId":"ft:statsbomb:75","teamName":"Charlton Athletic","preRating":1500,"postRating":1495,"delta":-4.9}
+{"fixtureId":"ft:statsbomb:3749465","date":"2004-03-13","teamId":"ft:statsbomb:98","teamName":"Blackburn Rovers","preRating":1493,"postRating":1482,"delta":-11.1}
+{"fixtureId":"ft:statsbomb:3749465","date":"2004-03-13","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1703,"postRating":1714,"delta":11.1}
+{"fixtureId":"ft:statsbomb:3749403","date":"2004-03-20","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1714,"postRating":1719,"delta":4.5}
+{"fixtureId":"ft:statsbomb:3749403","date":"2004-03-20","teamId":"ft:statsbomb:328","teamName":"Bolton Wanderers","preRating":1501,"postRating":1497,"delta":-4.5}
+{"fixtureId":"ft:statsbomb:3749246","date":"2004-03-28","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1719,"postRating":1707,"delta":-11.6}
+{"fixtureId":"ft:statsbomb:3749246","date":"2004-03-28","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1498,"postRating":1510,"delta":11.6}
+{"fixtureId":"ft:statsbomb:3749448","date":"2004-04-09","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1707,"postRating":1711,"delta":4.3}
+{"fixtureId":"ft:statsbomb:3749448","date":"2004-04-09","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1482,"postRating":1478,"delta":-4.3}
+{"fixtureId":"ft:statsbomb:3749431","date":"2004-04-11","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1491,"postRating":1496,"delta":5.3}
+{"fixtureId":"ft:statsbomb:3749431","date":"2004-04-11","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1711,"postRating":1706,"delta":-5.3}
+{"fixtureId":"ft:statsbomb:3749453","date":"2004-04-16","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1706,"postRating":1710,"delta":4.3}
+{"fixtureId":"ft:statsbomb:3749453","date":"2004-04-16","teamId":"ft:statsbomb:101","teamName":"Leeds United","preRating":1484,"postRating":1479,"delta":-4.3}
+{"fixtureId":"ft:statsbomb:3749068","date":"2004-04-25","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1493,"postRating":1498,"delta":5.2}
+{"fixtureId":"ft:statsbomb:3749068","date":"2004-04-25","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1710,"postRating":1705,"delta":-5.2}
+{"fixtureId":"ft:statsbomb:3749462","date":"2004-05-01","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1705,"postRating":1693,"delta":-11.6}
+{"fixtureId":"ft:statsbomb:3749462","date":"2004-05-01","teamId":"ft:statsbomb:54","teamName":"Birmingham City","preRating":1485,"postRating":1496,"delta":11.6}
+{"fixtureId":"ft:statsbomb:3749274","date":"2004-05-04","teamId":"ft:statsbomb:105","teamName":"Portsmouth","preRating":1507,"postRating":1511,"delta":3.9}
+{"fixtureId":"ft:statsbomb:3749274","date":"2004-05-04","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1693,"postRating":1689,"delta":-3.9}
+{"fixtureId":"ft:statsbomb:3749603","date":"2004-05-09","teamId":"ft:statsbomb:55","teamName":"Fulham","preRating":1509,"postRating":1497,"delta":-12.4}
+{"fixtureId":"ft:statsbomb:3749603","date":"2004-05-09","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1689,"postRating":1702,"delta":12.4}
+{"fixtureId":"ft:statsbomb:3749257","date":"2004-05-15","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1702,"postRating":1707,"delta":4.8}
+{"fixtureId":"ft:statsbomb:3749257","date":"2004-05-15","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1501,"postRating":1496,"delta":-4.8}
+{"fixtureId":"ft:statsbomb:3754097","date":"2015-08-08","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1510,"postRating":1521,"delta":11}
+{"fixtureId":"ft:statsbomb:3754097","date":"2015-08-08","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1498,"postRating":1487,"delta":-11}
+{"fixtureId":"ft:statsbomb:3754237","date":"2015-08-08","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1496,"postRating":1508,"delta":11.7}
+{"fixtureId":"ft:statsbomb:3754237","date":"2015-08-08","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1500,"postRating":1488,"delta":-11.7}
+{"fixtureId":"ft:statsbomb:3754300","date":"2015-08-08","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1491,"postRating":1487,"delta":-4.1}
+{"fixtureId":"ft:statsbomb:3754300","date":"2015-08-08","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1500,"postRating":1504,"delta":4.1}
+{"fixtureId":"ft:statsbomb:3754138","date":"2015-08-08","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1500,"postRating":1480,"delta":-20.5}
+{"fixtureId":"ft:statsbomb:3754138","date":"2015-08-08","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1500,"postRating":1520,"delta":20.5}
+{"fixtureId":"ft:statsbomb:3754128","date":"2015-08-08","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1500,"postRating":1479,"delta":-21.5}
+{"fixtureId":"ft:statsbomb:3754128","date":"2015-08-08","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1477,"postRating":1498,"delta":21.5}
+{"fixtureId":"ft:statsbomb:3754078","date":"2015-08-08","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1480,"postRating":1476,"delta":-3.6}
+{"fixtureId":"ft:statsbomb:3754078","date":"2015-08-08","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1500,"postRating":1504,"delta":3.6}
+{"fixtureId":"ft:statsbomb:3754112","date":"2015-08-09","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1496,"postRating":1491,"delta":-5.1}
+{"fixtureId":"ft:statsbomb:3754112","date":"2015-08-09","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1481,"postRating":1486,"delta":5.1}
+{"fixtureId":"ft:statsbomb:3754141","date":"2015-08-09","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1707,"postRating":1679,"delta":-27.3}
+{"fixtureId":"ft:statsbomb:3754141","date":"2015-08-09","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1500,"postRating":1527,"delta":27.3}
+{"fixtureId":"ft:statsbomb:3753985","date":"2015-08-09","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1500,"postRating":1479,"delta":-21.4}
+{"fixtureId":"ft:statsbomb:3753985","date":"2015-08-09","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1478,"postRating":1500,"delta":21.4}
+{"fixtureId":"ft:statsbomb:3754145","date":"2015-08-10","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1500,"postRating":1479,"delta":-21.5}
+{"fixtureId":"ft:statsbomb:3754145","date":"2015-08-10","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1476,"postRating":1498,"delta":21.5}
+{"fixtureId":"ft:statsbomb:3754107","date":"2015-08-14","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1498,"postRating":1478,"delta":-19.5}
+{"fixtureId":"ft:statsbomb:3754107","date":"2015-08-14","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1521,"postRating":1540,"delta":19.5}
+{"fixtureId":"ft:statsbomb:3754034","date":"2015-08-15","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1486,"postRating":1465,"delta":-20.4}
+{"fixtureId":"ft:statsbomb:3754034","date":"2015-08-15","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1487,"postRating":1507,"delta":20.4}
+{"fixtureId":"ft:statsbomb:3753993","date":"2015-08-15","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1488,"postRating":1467,"delta":-20.9}
+{"fixtureId":"ft:statsbomb:3753993","date":"2015-08-15","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1480,"postRating":1500,"delta":20.9}
+{"fixtureId":"ft:statsbomb:3754270","date":"2015-08-15","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1487,"postRating":1482,"delta":-4.8}
+{"fixtureId":"ft:statsbomb:3754270","date":"2015-08-15","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1479,"postRating":1483,"delta":4.8}
+{"fixtureId":"ft:statsbomb:3754344","date":"2015-08-15","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1504,"postRating":1515,"delta":11}
+{"fixtureId":"ft:statsbomb:3754344","date":"2015-08-15","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1491,"postRating":1480,"delta":-11}
+{"fixtureId":"ft:statsbomb:3754203","date":"2015-08-15","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1527,"postRating":1506,"delta":-21.3}
+{"fixtureId":"ft:statsbomb:3754203","date":"2015-08-15","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1508,"postRating":1529,"delta":21.3}
+{"fixtureId":"ft:statsbomb:3754267","date":"2015-08-15","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1504,"postRating":1499,"delta":-5.5}
+{"fixtureId":"ft:statsbomb:3754267","date":"2015-08-15","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1479,"postRating":1484,"delta":5.5}
+{"fixtureId":"ft:statsbomb:3754312","date":"2015-08-16","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1520,"postRating":1507,"delta":-13.3}
+{"fixtureId":"ft:statsbomb:3754312","date":"2015-08-16","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1679,"postRating":1693,"delta":13.3}
+{"fixtureId":"ft:statsbomb:3754066","date":"2015-08-16","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1498,"postRating":1508,"delta":10.6}
+{"fixtureId":"ft:statsbomb:3754066","date":"2015-08-16","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1476,"postRating":1466,"delta":-10.6}
+{"fixtureId":"ft:statsbomb:3754020","date":"2015-08-17","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1500,"postRating":1510,"delta":10.6}
+{"fixtureId":"ft:statsbomb:3754020","date":"2015-08-17","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1479,"postRating":1468,"delta":-10.6}
+{"fixtureId":"ft:statsbomb:3754254","date":"2015-08-22","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1540,"postRating":1533,"delta":-6.9}
+{"fixtureId":"ft:statsbomb:3754254","date":"2015-08-22","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1480,"postRating":1487,"delta":6.9}
+{"fixtureId":"ft:statsbomb:3754104","date":"2015-08-22","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1500,"postRating":1495,"delta":-5.2}
+{"fixtureId":"ft:statsbomb:3754104","date":"2015-08-22","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1483,"postRating":1489,"delta":5.2}
+{"fixtureId":"ft:statsbomb:3754131","date":"2015-08-22","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1506,"postRating":1484,"delta":-22}
+{"fixtureId":"ft:statsbomb:3754131","date":"2015-08-22","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1468,"postRating":1490,"delta":22}
+{"fixtureId":"ft:statsbomb:3754190","date":"2015-08-22","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1507,"postRating":1517,"delta":10.3}
+{"fixtureId":"ft:statsbomb:3754190","date":"2015-08-22","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1478,"postRating":1468,"delta":-10.3}
+{"fixtureId":"ft:statsbomb:3753987","date":"2015-08-22","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1529,"postRating":1523,"delta":-6.4}
+{"fixtureId":"ft:statsbomb:3753987","date":"2015-08-22","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1482,"postRating":1488,"delta":6.4}
+{"fixtureId":"ft:statsbomb:3754180","date":"2015-08-22","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1467,"postRating":1465,"delta":-2.4}
+{"fixtureId":"ft:statsbomb:3754180","date":"2015-08-22","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1515,"postRating":1517,"delta":2.4}
+{"fixtureId":"ft:statsbomb:3754059","date":"2015-08-23","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1484,"postRating":1463,"delta":-21.2}
+{"fixtureId":"ft:statsbomb:3754059","date":"2015-08-23","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1466,"postRating":1487,"delta":21.2}
+{"fixtureId":"ft:statsbomb:3754233","date":"2015-08-23","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1507,"postRating":1487,"delta":-20.5}
+{"fixtureId":"ft:statsbomb:3754233","date":"2015-08-23","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1508,"postRating":1529,"delta":20.5}
+{"fixtureId":"ft:statsbomb:3754189","date":"2015-08-23","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1499,"postRating":1493,"delta":-5.9}
+{"fixtureId":"ft:statsbomb:3754189","date":"2015-08-23","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1465,"postRating":1471,"delta":5.9}
+{"fixtureId":"ft:statsbomb:3754129","date":"2015-08-24","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1693,"postRating":1682,"delta":-10.7}
+{"fixtureId":"ft:statsbomb:3754129","date":"2015-08-24","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1510,"postRating":1521,"delta":10.7}
+{"fixtureId":"ft:statsbomb:3754205","date":"2015-08-29","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1487,"postRating":1475,"delta":-11.7}
+{"fixtureId":"ft:statsbomb:3754205","date":"2015-08-29","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1682,"postRating":1694,"delta":11.7}
+{"fixtureId":"ft:statsbomb:3754007","date":"2015-08-29","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1489,"postRating":1467,"delta":-21.6}
+{"fixtureId":"ft:statsbomb:3754007","date":"2015-08-29","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1463,"postRating":1484,"delta":21.6}
+{"fixtureId":"ft:statsbomb:3754023","date":"2015-08-29","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1490,"postRating":1487,"delta":-3.1}
+{"fixtureId":"ft:statsbomb:3754023","date":"2015-08-29","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1523,"postRating":1526,"delta":3.1}
+{"fixtureId":"ft:statsbomb:3753984","date":"2015-08-29","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1521,"postRating":1499,"delta":-22}
+{"fixtureId":"ft:statsbomb:3753984","date":"2015-08-29","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1484,"postRating":1506,"delta":22}
+{"fixtureId":"ft:statsbomb:3754083","date":"2015-08-29","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1487,"postRating":1468,"delta":-19.2}
+{"fixtureId":"ft:statsbomb:3754083","date":"2015-08-29","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1517,"postRating":1537,"delta":19.2}
+{"fixtureId":"ft:statsbomb:3754204","date":"2015-08-29","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1468,"postRating":1464,"delta":-4.6}
+{"fixtureId":"ft:statsbomb:3754204","date":"2015-08-29","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1465,"postRating":1470,"delta":4.6}
+{"fixtureId":"ft:statsbomb:3754246","date":"2015-08-29","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1529,"postRating":1539,"delta":10}
+{"fixtureId":"ft:statsbomb:3754246","date":"2015-08-29","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1493,"postRating":1483,"delta":-10}
+{"fixtureId":"ft:statsbomb:3754268","date":"2015-08-29","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1488,"postRating":1484,"delta":-4.5}
+{"fixtureId":"ft:statsbomb:3754268","date":"2015-08-29","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1487,"postRating":1492,"delta":4.5}
+{"fixtureId":"ft:statsbomb:3754337","date":"2015-08-30","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1471,"postRating":1484,"delta":12.6}
+{"fixtureId":"ft:statsbomb:3754337","date":"2015-08-30","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1495,"postRating":1483,"delta":-12.6}
+{"fixtureId":"ft:statsbomb:3754221","date":"2015-08-30","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1517,"postRating":1529,"delta":12.2}
+{"fixtureId":"ft:statsbomb:3754221","date":"2015-08-30","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1533,"postRating":1521,"delta":-12.2}
+{"fixtureId":"ft:statsbomb:3754336","date":"2015-09-12","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1492,"postRating":1502,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754336","date":"2015-09-12","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1468,"postRating":1457,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754213","date":"2015-09-12","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1483,"postRating":1496,"delta":13.6}
+{"fixtureId":"ft:statsbomb:3754213","date":"2015-09-12","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1529,"postRating":1516,"delta":-13.6}
+{"fixtureId":"ft:statsbomb:3754257","date":"2015-09-12","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1537,"postRating":1516,"delta":-20.4}
+{"fixtureId":"ft:statsbomb:3754257","date":"2015-09-12","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1539,"postRating":1559,"delta":20.4}
+{"fixtureId":"ft:statsbomb:3754315","date":"2015-09-12","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1483,"postRating":1494,"delta":11.7}
+{"fixtureId":"ft:statsbomb:3754315","date":"2015-09-12","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1487,"postRating":1475,"delta":-11.7}
+{"fixtureId":"ft:statsbomb:3754325","date":"2015-09-12","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1484,"postRating":1480,"delta":-4.5}
+{"fixtureId":"ft:statsbomb:3754325","date":"2015-09-12","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1484,"postRating":1488,"delta":4.5}
+{"fixtureId":"ft:statsbomb:3754240","date":"2015-09-12","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1694,"postRating":1698,"delta":4.2}
+{"fixtureId":"ft:statsbomb:3754240","date":"2015-09-12","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1467,"postRating":1463,"delta":-4.2}
+{"fixtureId":"ft:statsbomb:3754003","date":"2015-09-12","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1521,"postRating":1532,"delta":10.6}
+{"fixtureId":"ft:statsbomb:3754003","date":"2015-09-12","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1499,"postRating":1488,"delta":-10.6}
+{"fixtureId":"ft:statsbomb:3754148","date":"2015-09-13","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1470,"postRating":1450,"delta":-19.9}
+{"fixtureId":"ft:statsbomb:3754148","date":"2015-09-13","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1484,"postRating":1504,"delta":19.9}
+{"fixtureId":"ft:statsbomb:3754106","date":"2015-09-13","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1526,"postRating":1535,"delta":9}
+{"fixtureId":"ft:statsbomb:3754106","date":"2015-09-13","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1464,"postRating":1455,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754329","date":"2015-09-14","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1506,"postRating":1516,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3754329","date":"2015-09-14","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1475,"postRating":1465,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3754217","date":"2015-09-19","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1457,"postRating":1479,"delta":22.1}
+{"fixtureId":"ft:statsbomb:3754217","date":"2015-09-19","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1698,"postRating":1676,"delta":-22.1}
+{"fixtureId":"ft:statsbomb:3754146","date":"2015-09-19","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1463,"postRating":1462,"delta":-1.3}
+{"fixtureId":"ft:statsbomb:3754146","date":"2015-09-19","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1535,"postRating":1536,"delta":1.3}
+{"fixtureId":"ft:statsbomb:3754010","date":"2015-09-19","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1465,"postRating":1446,"delta":-19.1}
+{"fixtureId":"ft:statsbomb:3754010","date":"2015-09-19","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1496,"postRating":1515,"delta":19.1}
+{"fixtureId":"ft:statsbomb:3754068","date":"2015-09-19","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1455,"postRating":1435,"delta":-19.4}
+{"fixtureId":"ft:statsbomb:3754068","date":"2015-09-19","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1480,"postRating":1499,"delta":19.4}
+{"fixtureId":"ft:statsbomb:3754169","date":"2015-09-19","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1475,"postRating":1486,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754169","date":"2015-09-19","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1450,"postRating":1439,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754298","date":"2015-09-19","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1516,"postRating":1511,"delta":-5.1}
+{"fixtureId":"ft:statsbomb:3754298","date":"2015-09-19","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1502,"postRating":1507,"delta":5.1}
+{"fixtureId":"ft:statsbomb:3754077","date":"2015-09-19","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1559,"postRating":1537,"delta":-22.2}
+{"fixtureId":"ft:statsbomb:3754077","date":"2015-09-19","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1516,"postRating":1538,"delta":22.2}
+{"fixtureId":"ft:statsbomb:3754222","date":"2015-09-20","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1504,"postRating":1516,"delta":12.1}
+{"fixtureId":"ft:statsbomb:3754222","date":"2015-09-20","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1516,"postRating":1504,"delta":-12.1}
+{"fixtureId":"ft:statsbomb:3754011","date":"2015-09-20","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1488,"postRating":1470,"delta":-18.6}
+{"fixtureId":"ft:statsbomb:3754011","date":"2015-09-20","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1532,"postRating":1550,"delta":18.6}
+{"fixtureId":"ft:statsbomb:3754040","date":"2015-09-20","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1488,"postRating":1484,"delta":-4.2}
+{"fixtureId":"ft:statsbomb:3754040","date":"2015-09-20","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1494,"postRating":1499,"delta":4.2}
+{"fixtureId":"ft:statsbomb:3754197","date":"2015-09-26","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1516,"postRating":1528,"delta":12.4}
+{"fixtureId":"ft:statsbomb:3754197","date":"2015-09-26","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1537,"postRating":1524,"delta":-12.4}
+{"fixtureId":"ft:statsbomb:3754339","date":"2015-09-26","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1462,"postRating":1474,"delta":12.6}
+{"fixtureId":"ft:statsbomb:3754339","date":"2015-09-26","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1486,"postRating":1473,"delta":-12.6}
+{"fixtureId":"ft:statsbomb:3753978","date":"2015-09-26","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1470,"postRating":1483,"delta":13.3}
+{"fixtureId":"ft:statsbomb:3753978","date":"2015-09-26","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1511,"postRating":1497,"delta":-13.3}
+{"fixtureId":"ft:statsbomb:3754008","date":"2015-09-26","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1550,"postRating":1557,"delta":7.3}
+{"fixtureId":"ft:statsbomb:3754008","date":"2015-09-26","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1439,"postRating":1432,"delta":-7.3}
+{"fixtureId":"ft:statsbomb:3754174","date":"2015-09-26","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1536,"postRating":1522,"delta":-14.2}
+{"fixtureId":"ft:statsbomb:3754174","date":"2015-09-26","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1676,"postRating":1690,"delta":14.2}
+{"fixtureId":"ft:statsbomb:3754212","date":"2015-09-26","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1484,"postRating":1494,"delta":9.5}
+{"fixtureId":"ft:statsbomb:3754212","date":"2015-09-26","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1435,"postRating":1426,"delta":-9.5}
+{"fixtureId":"ft:statsbomb:3754323","date":"2015-09-26","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1538,"postRating":1532,"delta":-6.1}
+{"fixtureId":"ft:statsbomb:3754323","date":"2015-09-26","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1499,"postRating":1505,"delta":6.1}
+{"fixtureId":"ft:statsbomb:3754001","date":"2015-09-26","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1446,"postRating":1443,"delta":-3}
+{"fixtureId":"ft:statsbomb:3754001","date":"2015-09-26","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1479,"postRating":1482,"delta":3}
+{"fixtureId":"ft:statsbomb:3754266","date":"2015-09-27","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1515,"postRating":1494,"delta":-21}
+{"fixtureId":"ft:statsbomb:3754266","date":"2015-09-27","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1504,"postRating":1525,"delta":21}
+{"fixtureId":"ft:statsbomb:3754105","date":"2015-09-28","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1499,"postRating":1479,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754105","date":"2015-09-28","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1507,"postRating":1527,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754099","date":"2015-10-03","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1525,"postRating":1535,"delta":9.6}
+{"fixtureId":"ft:statsbomb:3754099","date":"2015-10-03","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1479,"postRating":1469,"delta":-9.6}
+{"fixtureId":"ft:statsbomb:3754278","date":"2015-10-03","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1473,"postRating":1470,"delta":-3.6}
+{"fixtureId":"ft:statsbomb:3754278","date":"2015-10-03","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1494,"postRating":1498,"delta":3.6}
+{"fixtureId":"ft:statsbomb:3754076","date":"2015-10-03","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1432,"postRating":1432,"delta":0}
+{"fixtureId":"ft:statsbomb:3754076","date":"2015-10-03","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1532,"postRating":1532,"delta":0}
+{"fixtureId":"ft:statsbomb:3754079","date":"2015-10-03","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1524,"postRating":1533,"delta":8.3}
+{"fixtureId":"ft:statsbomb:3754079","date":"2015-10-03","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1443,"postRating":1434,"delta":-8.3}
+{"fixtureId":"ft:statsbomb:3754335","date":"2015-10-03","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1505,"postRating":1485,"delta":-19.7}
+{"fixtureId":"ft:statsbomb:3754335","date":"2015-10-03","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1522,"postRating":1542,"delta":19.7}
+{"fixtureId":"ft:statsbomb:3754330","date":"2015-10-03","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1426,"postRating":1407,"delta":-18.4}
+{"fixtureId":"ft:statsbomb:3754330","date":"2015-10-03","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1474,"postRating":1492,"delta":18.4}
+{"fixtureId":"ft:statsbomb:3753995","date":"2015-10-03","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1482,"postRating":1462,"delta":-20.5}
+{"fixtureId":"ft:statsbomb:3753995","date":"2015-10-03","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1483,"postRating":1503,"delta":20.5}
+{"fixtureId":"ft:statsbomb:3754060","date":"2015-10-04","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1527,"postRating":1521,"delta":-5.9}
+{"fixtureId":"ft:statsbomb:3754060","date":"2015-10-04","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1494,"postRating":1499,"delta":5.9}
+{"fixtureId":"ft:statsbomb:3754074","date":"2015-10-04","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1497,"postRating":1494,"delta":-3.1}
+{"fixtureId":"ft:statsbomb:3754074","date":"2015-10-04","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1528,"postRating":1531,"delta":3.1}
+{"fixtureId":"ft:statsbomb:3754171","date":"2015-10-04","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1690,"postRating":1697,"delta":6.7}
+{"fixtureId":"ft:statsbomb:3754171","date":"2015-10-04","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1557,"postRating":1551,"delta":-6.7}
+{"fixtureId":"ft:statsbomb:3754198","date":"2015-10-17","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1531,"postRating":1526,"delta":-5.8}
+{"fixtureId":"ft:statsbomb:3754198","date":"2015-10-17","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1499,"postRating":1505,"delta":5.8}
+{"fixtureId":"ft:statsbomb:3754245","date":"2015-10-17","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1469,"postRating":1479,"delta":10}
+{"fixtureId":"ft:statsbomb:3754245","date":"2015-10-17","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1432,"postRating":1422,"delta":-10}
+{"fixtureId":"ft:statsbomb:3754067","date":"2015-10-17","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1535,"postRating":1514,"delta":-20.6}
+{"fixtureId":"ft:statsbomb:3754067","date":"2015-10-17","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1532,"postRating":1553,"delta":20.6}
+{"fixtureId":"ft:statsbomb:3754115","date":"2015-10-17","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1462,"postRating":1471,"delta":9.3}
+{"fixtureId":"ft:statsbomb:3754115","date":"2015-10-17","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1407,"postRating":1398,"delta":-9.3}
+{"fixtureId":"ft:statsbomb:3754193","date":"2015-10-17","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1533,"postRating":1542,"delta":9}
+{"fixtureId":"ft:statsbomb:3754193","date":"2015-10-17","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1470,"postRating":1461,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754256","date":"2015-10-17","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1521,"postRating":1502,"delta":-19.2}
+{"fixtureId":"ft:statsbomb:3754256","date":"2015-10-17","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1551,"postRating":1570,"delta":19.2}
+{"fixtureId":"ft:statsbomb:3754302","date":"2015-10-17","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1503,"postRating":1501,"delta":-2.8}
+{"fixtureId":"ft:statsbomb:3754302","date":"2015-10-17","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1542,"postRating":1544,"delta":2.8}
+{"fixtureId":"ft:statsbomb:3753999","date":"2015-10-17","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1498,"postRating":1486,"delta":-11.6}
+{"fixtureId":"ft:statsbomb:3753999","date":"2015-10-17","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1697,"postRating":1708,"delta":11.6}
+{"fixtureId":"ft:statsbomb:3754102","date":"2015-10-18","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1434,"postRating":1448,"delta":13.7}
+{"fixtureId":"ft:statsbomb:3754102","date":"2015-10-18","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1485,"postRating":1471,"delta":-13.7}
+{"fixtureId":"ft:statsbomb:3754269","date":"2015-10-19","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1494,"postRating":1474,"delta":-20.6}
+{"fixtureId":"ft:statsbomb:3754269","date":"2015-10-19","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1492,"postRating":1513,"delta":20.6}
+{"fixtureId":"ft:statsbomb:3754091","date":"2015-10-24","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1513,"postRating":1491,"delta":-21.6}
+{"fixtureId":"ft:statsbomb:3754091","date":"2015-10-24","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1486,"postRating":1508,"delta":21.6}
+{"fixtureId":"ft:statsbomb:3754017","date":"2015-10-24","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1398,"postRating":1381,"delta":-17.1}
+{"fixtureId":"ft:statsbomb:3754017","date":"2015-10-24","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1474,"postRating":1491,"delta":17.1}
+{"fixtureId":"ft:statsbomb:3754133","date":"2015-10-24","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1471,"postRating":1451,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754133","date":"2015-10-24","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1479,"postRating":1500,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754288","date":"2015-10-24","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1553,"postRating":1561,"delta":8.3}
+{"fixtureId":"ft:statsbomb:3754288","date":"2015-10-24","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1471,"postRating":1463,"delta":-8.3}
+{"fixtureId":"ft:statsbomb:3754263","date":"2015-10-24","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1544,"postRating":1555,"delta":10.3}
+{"fixtureId":"ft:statsbomb:3754263","date":"2015-10-24","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1514,"postRating":1504,"delta":-10.3}
+{"fixtureId":"ft:statsbomb:3754126","date":"2015-10-24","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1708,"postRating":1713,"delta":4.7}
+{"fixtureId":"ft:statsbomb:3754126","date":"2015-10-24","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1502,"postRating":1498,"delta":-4.7}
+{"fixtureId":"ft:statsbomb:3754119","date":"2015-10-25","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1422,"postRating":1435,"delta":12.6}
+{"fixtureId":"ft:statsbomb:3754119","date":"2015-10-25","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1448,"postRating":1435,"delta":-12.6}
+{"fixtureId":"ft:statsbomb:3754015","date":"2015-10-25","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1570,"postRating":1564,"delta":-5.7}
+{"fixtureId":"ft:statsbomb:3754015","date":"2015-10-25","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1542,"postRating":1547,"delta":5.7}
+{"fixtureId":"ft:statsbomb:3754234","date":"2015-10-25","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1461,"postRating":1443,"delta":-17.6}
+{"fixtureId":"ft:statsbomb:3754234","date":"2015-10-25","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1526,"postRating":1543,"delta":17.6}
+{"fixtureId":"ft:statsbomb:3754230","date":"2015-10-25","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1505,"postRating":1501,"delta":-4.7}
+{"fixtureId":"ft:statsbomb:3754230","date":"2015-10-25","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1501,"postRating":1505,"delta":4.7}
+{"fixtureId":"ft:statsbomb:3754098","date":"2015-10-31","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1463,"postRating":1444,"delta":-18.8}
+{"fixtureId":"ft:statsbomb:3754098","date":"2015-10-31","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1501,"postRating":1519,"delta":18.8}
+{"fixtureId":"ft:statsbomb:3753983","date":"2015-10-31","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1491,"postRating":1480,"delta":-10.6}
+{"fixtureId":"ft:statsbomb:3753983","date":"2015-10-31","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1713,"postRating":1723,"delta":10.6}
+{"fixtureId":"ft:statsbomb:3754006","date":"2015-10-31","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1500,"postRating":1482,"delta":-18.1}
+{"fixtureId":"ft:statsbomb:3754006","date":"2015-10-31","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1555,"postRating":1573,"delta":18.1}
+{"fixtureId":"ft:statsbomb:3754090","date":"2015-10-31","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1435,"postRating":1433,"delta":-2}
+{"fixtureId":"ft:statsbomb:3754090","date":"2015-10-31","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1491,"postRating":1493,"delta":2}
+{"fixtureId":"ft:statsbomb:3754167","date":"2015-10-31","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1547,"postRating":1555,"delta":7.8}
+{"fixtureId":"ft:statsbomb:3754167","date":"2015-10-31","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1451,"postRating":1443,"delta":-7.8}
+{"fixtureId":"ft:statsbomb:3754223","date":"2015-10-31","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1504,"postRating":1502,"delta":-1.8}
+{"fixtureId":"ft:statsbomb:3754223","date":"2015-10-31","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1564,"postRating":1566,"delta":1.8}
+{"fixtureId":"ft:statsbomb:3754273","date":"2015-10-31","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1508,"postRating":1522,"delta":13.9}
+{"fixtureId":"ft:statsbomb:3754273","date":"2015-10-31","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1561,"postRating":1547,"delta":-13.9}
+{"fixtureId":"ft:statsbomb:3754082","date":"2015-11-01","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1498,"postRating":1507,"delta":9}
+{"fixtureId":"ft:statsbomb:3754082","date":"2015-11-01","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1435,"postRating":1426,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754191","date":"2015-11-01","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1505,"postRating":1514,"delta":9}
+{"fixtureId":"ft:statsbomb:3754191","date":"2015-11-01","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1443,"postRating":1434,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754029","date":"2015-11-02","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1543,"postRating":1549,"delta":5.8}
+{"fixtureId":"ft:statsbomb:3754029","date":"2015-11-02","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1381,"postRating":1375,"delta":-5.8}
+{"fixtureId":"ft:statsbomb:3754238","date":"2015-11-07","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1434,"postRating":1413,"delta":-20.5}
+{"fixtureId":"ft:statsbomb:3754238","date":"2015-11-07","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1433,"postRating":1454,"delta":20.5}
+{"fixtureId":"ft:statsbomb:3754194","date":"2015-11-07","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1547,"postRating":1541,"delta":-6.2}
+{"fixtureId":"ft:statsbomb:3754194","date":"2015-11-07","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1507,"postRating":1513,"delta":6.2}
+{"fixtureId":"ft:statsbomb:3754297","date":"2015-11-07","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1566,"postRating":1574,"delta":8.2}
+{"fixtureId":"ft:statsbomb:3754297","date":"2015-11-07","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1482,"postRating":1473,"delta":-8.2}
+{"fixtureId":"ft:statsbomb:3754311","date":"2015-11-07","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1443,"postRating":1456,"delta":13.1}
+{"fixtureId":"ft:statsbomb:3754311","date":"2015-11-07","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1480,"postRating":1467,"delta":-13.1}
+{"fixtureId":"ft:statsbomb:3754156","date":"2015-11-07","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1573,"postRating":1582,"delta":9.5}
+{"fixtureId":"ft:statsbomb:3754156","date":"2015-11-07","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1522,"postRating":1512,"delta":-9.5}
+{"fixtureId":"ft:statsbomb:3754000","date":"2015-11-07","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1426,"postRating":1409,"delta":-16.5}
+{"fixtureId":"ft:statsbomb:3754000","date":"2015-11-07","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1514,"postRating":1531,"delta":16.5}
+{"fixtureId":"ft:statsbomb:3754293","date":"2015-11-07","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1493,"postRating":1503,"delta":9.5}
+{"fixtureId":"ft:statsbomb:3754293","date":"2015-11-07","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1444,"postRating":1435,"delta":-9.5}
+{"fixtureId":"ft:statsbomb:3754258","date":"2015-11-08","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1375,"postRating":1379,"delta":3.6}
+{"fixtureId":"ft:statsbomb:3754258","date":"2015-11-08","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1555,"postRating":1552,"delta":-3.6}
+{"fixtureId":"ft:statsbomb:3754351","date":"2015-11-08","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1519,"postRating":1498,"delta":-21.2}
+{"fixtureId":"ft:statsbomb:3754351","date":"2015-11-08","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1502,"postRating":1523,"delta":21.2}
+{"fixtureId":"ft:statsbomb:3754265","date":"2015-11-08","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1723,"postRating":1713,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754265","date":"2015-11-08","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1549,"postRating":1559,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754185","date":"2015-11-21","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1512,"postRating":1495,"delta":-17.7}
+{"fixtureId":"ft:statsbomb:3754185","date":"2015-11-21","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1574,"postRating":1592,"delta":17.7}
+{"fixtureId":"ft:statsbomb:3753972","date":"2015-11-21","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1467,"postRating":1460,"delta":-6.6}
+{"fixtureId":"ft:statsbomb:3753972","date":"2015-11-21","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1413,"postRating":1420,"delta":6.6}
+{"fixtureId":"ft:statsbomb:3753996","date":"2015-11-21","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1435,"postRating":1447,"delta":12.5}
+{"fixtureId":"ft:statsbomb:3753996","date":"2015-11-21","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1456,"postRating":1444,"delta":-12.5}
+{"fixtureId":"ft:statsbomb:3754211","date":"2015-11-21","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1454,"postRating":1439,"delta":-14.7}
+{"fixtureId":"ft:statsbomb:3754211","date":"2015-11-21","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1582,"postRating":1597,"delta":14.7}
+{"fixtureId":"ft:statsbomb:3754283","date":"2015-11-21","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1513,"postRating":1519,"delta":6.6}
+{"fixtureId":"ft:statsbomb:3754283","date":"2015-11-21","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1379,"postRating":1372,"delta":-6.6}
+{"fixtureId":"ft:statsbomb:3754301","date":"2015-11-21","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1473,"postRating":1495,"delta":22.1}
+{"fixtureId":"ft:statsbomb:3754301","date":"2015-11-21","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1713,"postRating":1691,"delta":-22.1}
+{"fixtureId":"ft:statsbomb:3754247","date":"2015-11-21","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1531,"postRating":1509,"delta":-21.6}
+{"fixtureId":"ft:statsbomb:3754247","date":"2015-11-21","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1503,"postRating":1525,"delta":21.6}
+{"fixtureId":"ft:statsbomb:3754208","date":"2015-11-21","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1552,"postRating":1529,"delta":-22.6}
+{"fixtureId":"ft:statsbomb:3754208","date":"2015-11-21","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1498,"postRating":1521,"delta":22.6}
+{"fixtureId":"ft:statsbomb:3754109","date":"2015-11-22","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1559,"postRating":1570,"delta":10.8}
+{"fixtureId":"ft:statsbomb:3754109","date":"2015-11-22","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1541,"postRating":1530,"delta":-10.8}
+{"fixtureId":"ft:statsbomb:3753979","date":"2015-11-23","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1523,"postRating":1499,"delta":-24.8}
+{"fixtureId":"ft:statsbomb:3753979","date":"2015-11-23","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1409,"postRating":1434,"delta":24.8}
+{"fixtureId":"ft:statsbomb:3754028","date":"2015-11-28","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1529,"postRating":1540,"delta":10.7}
+{"fixtureId":"ft:statsbomb:3754028","date":"2015-11-28","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1509,"postRating":1498,"delta":-10.7}
+{"fixtureId":"ft:statsbomb:3754178","date":"2015-11-28","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1372,"postRating":1357,"delta":-15}
+{"fixtureId":"ft:statsbomb:3754178","date":"2015-11-28","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1495,"postRating":1510,"delta":15}
+{"fixtureId":"ft:statsbomb:3754157","date":"2015-11-28","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1420,"postRating":1420,"delta":0}
+{"fixtureId":"ft:statsbomb:3754157","date":"2015-11-28","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1519,"postRating":1519,"delta":0}
+{"fixtureId":"ft:statsbomb:3754150","date":"2015-11-28","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1434,"postRating":1449,"delta":15.6}
+{"fixtureId":"ft:statsbomb:3754150","date":"2015-11-28","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1525,"postRating":1509,"delta":-15.6}
+{"fixtureId":"ft:statsbomb:3754304","date":"2015-11-28","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1499,"postRating":1508,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754304","date":"2015-11-28","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1439,"postRating":1430,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754186","date":"2015-11-28","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1597,"postRating":1592,"delta":-4.7}
+{"fixtureId":"ft:statsbomb:3754186","date":"2015-11-28","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1592,"postRating":1597,"delta":4.7}
+{"fixtureId":"ft:statsbomb:3754093","date":"2015-11-29","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1570,"postRating":1561,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754093","date":"2015-11-29","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1447,"postRating":1456,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754235","date":"2015-11-29","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1530,"postRating":1525,"delta":-5.9}
+{"fixtureId":"ft:statsbomb:3754235","date":"2015-11-29","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1495,"postRating":1501,"delta":5.9}
+{"fixtureId":"ft:statsbomb:3754047","date":"2015-11-29","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1521,"postRating":1530,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754047","date":"2015-11-29","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1460,"postRating":1451,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754038","date":"2015-11-29","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1444,"postRating":1450,"delta":6.4}
+{"fixtureId":"ft:statsbomb:3754038","date":"2015-11-29","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1691,"postRating":1684,"delta":-6.4}
+{"fixtureId":"ft:statsbomb:3754135","date":"2015-12-05","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1509,"postRating":1522,"delta":12.8}
+{"fixtureId":"ft:statsbomb:3754135","date":"2015-12-05","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1540,"postRating":1527,"delta":-12.8}
+{"fixtureId":"ft:statsbomb:3754160","date":"2015-12-05","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1684,"postRating":1688,"delta":4.1}
+{"fixtureId":"ft:statsbomb:3754160","date":"2015-12-05","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1449,"postRating":1445,"delta":-4.1}
+{"fixtureId":"ft:statsbomb:3754347","date":"2015-12-05","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1597,"postRating":1589,"delta":-7.3}
+{"fixtureId":"ft:statsbomb:3754347","date":"2015-12-05","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1525,"postRating":1532,"delta":7.3}
+{"fixtureId":"ft:statsbomb:3754085","date":"2015-12-05","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1451,"postRating":1437,"delta":-14.1}
+{"fixtureId":"ft:statsbomb:3754085","date":"2015-12-05","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1592,"postRating":1606,"delta":14.1}
+{"fixtureId":"ft:statsbomb:3754113","date":"2015-12-05","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1498,"postRating":1489,"delta":-9.6}
+{"fixtureId":"ft:statsbomb:3754113","date":"2015-12-05","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1357,"postRating":1367,"delta":9.6}
+{"fixtureId":"ft:statsbomb:3754286","date":"2015-12-05","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1510,"postRating":1519,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754286","date":"2015-12-05","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1450,"postRating":1441,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754215","date":"2015-12-05","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1501,"postRating":1499,"delta":-1.8}
+{"fixtureId":"ft:statsbomb:3754215","date":"2015-12-05","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1561,"postRating":1563,"delta":1.8}
+{"fixtureId":"ft:statsbomb:3754073","date":"2015-12-05","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1456,"postRating":1434,"delta":-22}
+{"fixtureId":"ft:statsbomb:3754073","date":"2015-12-05","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1420,"postRating":1442,"delta":22}
+{"fixtureId":"ft:statsbomb:3754143","date":"2015-12-06","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1430,"postRating":1446,"delta":16}
+{"fixtureId":"ft:statsbomb:3754143","date":"2015-12-06","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1530,"postRating":1514,"delta":-16}
+{"fixtureId":"ft:statsbomb:3754046","date":"2015-12-07","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1519,"postRating":1514,"delta":-5}
+{"fixtureId":"ft:statsbomb:3754046","date":"2015-12-07","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1508,"postRating":1513,"delta":5}
+{"fixtureId":"ft:statsbomb:3754182","date":"2015-12-12","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1441,"postRating":1440,"delta":-1.2}
+{"fixtureId":"ft:statsbomb:3754182","date":"2015-12-12","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1514,"postRating":1516,"delta":1.2}
+{"fixtureId":"ft:statsbomb:3754072","date":"2015-12-12","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1445,"postRating":1428,"delta":-17.2}
+{"fixtureId":"ft:statsbomb:3754072","date":"2015-12-12","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1519,"postRating":1536,"delta":17.2}
+{"fixtureId":"ft:statsbomb:3754096","date":"2015-12-12","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1532,"postRating":1527,"delta":-4.9}
+{"fixtureId":"ft:statsbomb:3754096","date":"2015-12-12","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1522,"postRating":1527,"delta":4.9}
+{"fixtureId":"ft:statsbomb:3754218","date":"2015-12-12","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1513,"postRating":1523,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754218","date":"2015-12-12","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1489,"postRating":1478,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754328","date":"2015-12-12","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1527,"postRating":1535,"delta":8}
+{"fixtureId":"ft:statsbomb:3754328","date":"2015-12-12","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1437,"postRating":1429,"delta":-8}
+{"fixtureId":"ft:statsbomb:3754162","date":"2015-12-12","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1442,"postRating":1460,"delta":18.2}
+{"fixtureId":"ft:statsbomb:3754162","date":"2015-12-12","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1589,"postRating":1571,"delta":-18.2}
+{"fixtureId":"ft:statsbomb:3754117","date":"2015-12-13","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1367,"postRating":1360,"delta":-7}
+{"fixtureId":"ft:statsbomb:3754117","date":"2015-12-13","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1688,"postRating":1695,"delta":7}
+{"fixtureId":"ft:statsbomb:3754255","date":"2015-12-13","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1514,"postRating":1509,"delta":-5.1}
+{"fixtureId":"ft:statsbomb:3754255","date":"2015-12-13","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1499,"postRating":1505,"delta":5.1}
+{"fixtureId":"ft:statsbomb:3754276","date":"2015-12-13","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1563,"postRating":1538,"delta":-24.9}
+{"fixtureId":"ft:statsbomb:3754276","date":"2015-12-13","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1446,"postRating":1471,"delta":24.9}
+{"fixtureId":"ft:statsbomb:3754013","date":"2015-12-14","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1606,"postRating":1612,"delta":5.5}
+{"fixtureId":"ft:statsbomb:3754013","date":"2015-12-14","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1434,"postRating":1429,"delta":-5.5}
+{"fixtureId":"ft:statsbomb:3754025","date":"2015-12-19","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1429,"postRating":1440,"delta":11.5}
+{"fixtureId":"ft:statsbomb:3754025","date":"2015-12-19","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1428,"postRating":1417,"delta":-11.5}
+{"fixtureId":"ft:statsbomb:3754153","date":"2015-12-19","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1527,"postRating":1506,"delta":-20.6}
+{"fixtureId":"ft:statsbomb:3754153","date":"2015-12-19","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1523,"postRating":1544,"delta":20.6}
+{"fixtureId":"ft:statsbomb:3754188","date":"2015-12-19","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1478,"postRating":1460,"delta":-17.8}
+{"fixtureId":"ft:statsbomb:3754188","date":"2015-12-19","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1538,"postRating":1556,"delta":17.8}
+{"fixtureId":"ft:statsbomb:3754166","date":"2015-12-19","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1516,"postRating":1499,"delta":-16.2}
+{"fixtureId":"ft:statsbomb:3754166","date":"2015-12-19","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1612,"postRating":1628,"delta":16.2}
+{"fixtureId":"ft:statsbomb:3754219","date":"2015-12-19","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1505,"postRating":1482,"delta":-22.3}
+{"fixtureId":"ft:statsbomb:3754219","date":"2015-12-19","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1460,"postRating":1482,"delta":22.3}
+{"fixtureId":"ft:statsbomb:3754044","date":"2015-12-19","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1571,"postRating":1546,"delta":-25.3}
+{"fixtureId":"ft:statsbomb:3754044","date":"2015-12-19","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1440,"postRating":1465,"delta":25.3}
+{"fixtureId":"ft:statsbomb:3754136","date":"2015-12-19","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1471,"postRating":1462,"delta":-8.7}
+{"fixtureId":"ft:statsbomb:3754136","date":"2015-12-19","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1360,"postRating":1368,"delta":8.7}
+{"fixtureId":"ft:statsbomb:3754051","date":"2015-12-20","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1536,"postRating":1546,"delta":10.4}
+{"fixtureId":"ft:statsbomb:3754051","date":"2015-12-20","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1509,"postRating":1498,"delta":-10.4}
+{"fixtureId":"ft:statsbomb:3754259","date":"2015-12-20","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1429,"postRating":1429,"delta":-0.1}
+{"fixtureId":"ft:statsbomb:3754259","date":"2015-12-20","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1527,"postRating":1527,"delta":0.1}
+{"fixtureId":"ft:statsbomb:3754296","date":"2015-12-21","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1695,"postRating":1701,"delta":5.8}
+{"fixtureId":"ft:statsbomb:3754296","date":"2015-12-21","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1535,"postRating":1529,"delta":-5.8}
+{"fixtureId":"ft:statsbomb:3754014","date":"2015-12-26","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1506,"postRating":1519,"delta":13.3}
+{"fixtureId":"ft:statsbomb:3754014","date":"2015-12-26","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1546,"postRating":1533,"delta":-13.3}
+{"fixtureId":"ft:statsbomb:3754057","date":"2015-12-26","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1556,"postRating":1564,"delta":8}
+{"fixtureId":"ft:statsbomb:3754057","date":"2015-12-26","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1465,"postRating":1457,"delta":-8}
+{"fixtureId":"ft:statsbomb:3754054","date":"2015-12-26","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1529,"postRating":1536,"delta":7.3}
+{"fixtureId":"ft:statsbomb:3754054","date":"2015-12-26","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1417,"postRating":1409,"delta":-7.3}
+{"fixtureId":"ft:statsbomb:3754285","date":"2015-12-26","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1368,"postRating":1371,"delta":2.7}
+{"fixtureId":"ft:statsbomb:3754285","date":"2015-12-26","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1527,"postRating":1524,"delta":-2.7}
+{"fixtureId":"ft:statsbomb:3754279","date":"2015-12-26","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1429,"postRating":1443,"delta":13.9}
+{"fixtureId":"ft:statsbomb:3754279","date":"2015-12-26","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1482,"postRating":1468,"delta":-13.9}
+{"fixtureId":"ft:statsbomb:3754287","date":"2015-12-26","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1440,"postRating":1440,"delta":0.3}
+{"fixtureId":"ft:statsbomb:3754287","date":"2015-12-26","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1546,"postRating":1546,"delta":-0.3}
+{"fixtureId":"ft:statsbomb:3754343","date":"2015-12-26","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1498,"postRating":1516,"delta":17.4}
+{"fixtureId":"ft:statsbomb:3754343","date":"2015-12-26","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1628,"postRating":1611,"delta":-17.4}
+{"fixtureId":"ft:statsbomb:3754248","date":"2015-12-26","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1482,"postRating":1481,"delta":-1.8}
+{"fixtureId":"ft:statsbomb:3754248","date":"2015-12-26","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1544,"postRating":1546,"delta":1.8}
+{"fixtureId":"ft:statsbomb:3753974","date":"2015-12-26","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1462,"postRating":1443,"delta":-18.9}
+{"fixtureId":"ft:statsbomb:3753974","date":"2015-12-26","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1499,"postRating":1518,"delta":18.9}
+{"fixtureId":"ft:statsbomb:3754309","date":"2015-12-26","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1460,"postRating":1483,"delta":22.2}
+{"fixtureId":"ft:statsbomb:3754309","date":"2015-12-26","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1701,"postRating":1679,"delta":-22.2}
+{"fixtureId":"ft:statsbomb:3754056","date":"2015-12-28","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1518,"postRating":1498,"delta":-20.4}
+{"fixtureId":"ft:statsbomb:3754056","date":"2015-12-28","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1519,"postRating":1540,"delta":20.4}
+{"fixtureId":"ft:statsbomb:3754130","date":"2015-12-28","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1457,"postRating":1465,"delta":8.2}
+{"fixtureId":"ft:statsbomb:3754130","date":"2015-12-28","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1371,"postRating":1363,"delta":-8.2}
+{"fixtureId":"ft:statsbomb:3754291","date":"2015-12-28","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1546,"postRating":1526,"delta":-19.7}
+{"fixtureId":"ft:statsbomb:3754291","date":"2015-12-28","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1564,"postRating":1584,"delta":19.7}
+{"fixtureId":"ft:statsbomb:3754195","date":"2015-12-28","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1468,"postRating":1479,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754195","date":"2015-12-28","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1443,"postRating":1433,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754326","date":"2015-12-28","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1546,"postRating":1537,"delta":-8.4}
+{"fixtureId":"ft:statsbomb:3754326","date":"2015-12-28","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1443,"postRating":1451,"delta":8.4}
+{"fixtureId":"ft:statsbomb:3754173","date":"2015-12-28","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1679,"postRating":1684,"delta":4.9}
+{"fixtureId":"ft:statsbomb:3754173","date":"2015-12-28","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1481,"postRating":1476,"delta":-4.9}
+{"fixtureId":"ft:statsbomb:3753998","date":"2015-12-28","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1524,"postRating":1534,"delta":9.8}
+{"fixtureId":"ft:statsbomb:3753998","date":"2015-12-28","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1483,"postRating":1473,"delta":-9.8}
+{"fixtureId":"ft:statsbomb:3754019","date":"2015-12-28","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1533,"postRating":1525,"delta":-8.1}
+{"fixtureId":"ft:statsbomb:3754019","date":"2015-12-28","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1440,"postRating":1448,"delta":8.1}
+{"fixtureId":"ft:statsbomb:3754045","date":"2015-12-29","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1611,"postRating":1603,"delta":-7.4}
+{"fixtureId":"ft:statsbomb:3754045","date":"2015-12-29","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1536,"postRating":1544,"delta":7.4}
+{"fixtureId":"ft:statsbomb:3754226","date":"2015-12-30","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1409,"postRating":1394,"delta":-15.7}
+{"fixtureId":"ft:statsbomb:3754226","date":"2015-12-30","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1516,"postRating":1532,"delta":15.7}
+{"fixtureId":"ft:statsbomb:3754251","date":"2016-01-02","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1534,"postRating":1546,"delta":11.4}
+{"fixtureId":"ft:statsbomb:3754251","date":"2016-01-02","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1532,"postRating":1520,"delta":-11.4}
+{"fixtureId":"ft:statsbomb:3754069","date":"2016-01-02","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1684,"postRating":1688,"delta":3.7}
+{"fixtureId":"ft:statsbomb:3754069","date":"2016-01-02","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1433,"postRating":1429,"delta":-3.7}
+{"fixtureId":"ft:statsbomb:3754058","date":"2016-01-02","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1603,"postRating":1594,"delta":-9.2}
+{"fixtureId":"ft:statsbomb:3754058","date":"2016-01-02","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1476,"postRating":1485,"delta":9.2}
+{"fixtureId":"ft:statsbomb:3754036","date":"2016-01-02","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1394,"postRating":1404,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3754036","date":"2016-01-02","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1363,"postRating":1353,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3754101","date":"2016-01-02","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1465,"postRating":1477,"delta":11.8}
+{"fixtureId":"ft:statsbomb:3754101","date":"2016-01-02","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1473,"postRating":1461,"delta":-11.8}
+{"fixtureId":"ft:statsbomb:3754122","date":"2016-01-02","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1479,"postRating":1493,"delta":14.2}
+{"fixtureId":"ft:statsbomb:3754122","date":"2016-01-02","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1540,"postRating":1526,"delta":-14.2}
+{"fixtureId":"ft:statsbomb:3754319","date":"2016-01-02","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1525,"postRating":1533,"delta":8.6}
+{"fixtureId":"ft:statsbomb:3754319","date":"2016-01-02","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1451,"postRating":1443,"delta":-8.6}
+{"fixtureId":"ft:statsbomb:3754346","date":"2016-01-02","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1526,"postRating":1507,"delta":-19.7}
+{"fixtureId":"ft:statsbomb:3754346","date":"2016-01-02","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1544,"postRating":1563,"delta":19.7}
+{"fixtureId":"ft:statsbomb:3754114","date":"2016-01-03","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1537,"postRating":1513,"delta":-23.9}
+{"fixtureId":"ft:statsbomb:3754114","date":"2016-01-03","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1448,"postRating":1472,"delta":23.9}
+{"fixtureId":"ft:statsbomb:3754140","date":"2016-01-03","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1498,"postRating":1497,"delta":-0.7}
+{"fixtureId":"ft:statsbomb:3754140","date":"2016-01-03","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1584,"postRating":1584,"delta":0.7}
+{"fixtureId":"ft:statsbomb:3753981","date":"2016-01-12","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1353,"postRating":1371,"delta":18.8}
+{"fixtureId":"ft:statsbomb:3753981","date":"2016-01-12","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1513,"postRating":1495,"delta":-18.8}
+{"fixtureId":"ft:statsbomb:3754021","date":"2016-01-12","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1485,"postRating":1467,"delta":-17.8}
+{"fixtureId":"ft:statsbomb:3754021","date":"2016-01-12","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1546,"postRating":1563,"delta":17.8}
+{"fixtureId":"ft:statsbomb:3754088","date":"2016-01-12","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1429,"postRating":1429,"delta":0.2}
+{"fixtureId":"ft:statsbomb:3754088","date":"2016-01-12","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1533,"postRating":1533,"delta":-0.2}
+{"fixtureId":"ft:statsbomb:3754032","date":"2016-01-13","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1526,"postRating":1535,"delta":9.6}
+{"fixtureId":"ft:statsbomb:3754032","date":"2016-01-13","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1477,"postRating":1468,"delta":-9.6}
+{"fixtureId":"ft:statsbomb:3754062","date":"2016-01-13","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1472,"postRating":1469,"delta":-3.6}
+{"fixtureId":"ft:statsbomb:3754062","date":"2016-01-13","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1493,"postRating":1497,"delta":3.6}
+{"fixtureId":"ft:statsbomb:3754071","date":"2016-01-13","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1443,"postRating":1421,"delta":-22.1}
+{"fixtureId":"ft:statsbomb:3754071","date":"2016-01-13","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1404,"postRating":1426,"delta":22.1}
+{"fixtureId":"ft:statsbomb:3754142","date":"2016-01-13","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1563,"postRating":1556,"delta":-7.1}
+{"fixtureId":"ft:statsbomb:3754142","date":"2016-01-13","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1497,"postRating":1504,"delta":7.1}
+{"fixtureId":"ft:statsbomb:3754183","date":"2016-01-13","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1461,"postRating":1475,"delta":13.5}
+{"fixtureId":"ft:statsbomb:3754183","date":"2016-01-13","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1507,"postRating":1493,"delta":-13.5}
+{"fixtureId":"ft:statsbomb:3754065","date":"2016-01-13","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1584,"postRating":1564,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754065","date":"2016-01-13","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1594,"postRating":1614,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754305","date":"2016-01-13","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1520,"postRating":1523,"delta":3.1}
+{"fixtureId":"ft:statsbomb:3754305","date":"2016-01-13","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1688,"postRating":1685,"delta":-3.1}
+{"fixtureId":"ft:statsbomb:3754027","date":"2016-01-16","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1564,"postRating":1571,"delta":6.5}
+{"fixtureId":"ft:statsbomb:3754027","date":"2016-01-16","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1426,"postRating":1420,"delta":-6.5}
+{"fixtureId":"ft:statsbomb:3754004","date":"2016-01-16","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1467,"postRating":1479,"delta":11.5}
+{"fixtureId":"ft:statsbomb:3754004","date":"2016-01-16","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1468,"postRating":1456,"delta":-11.5}
+{"fixtureId":"ft:statsbomb:3754125","date":"2016-01-16","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1469,"postRating":1466,"delta":-2.9}
+{"fixtureId":"ft:statsbomb:3754125","date":"2016-01-16","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1504,"postRating":1507,"delta":2.9}
+{"fixtureId":"ft:statsbomb:3754168","date":"2016-01-16","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1475,"postRating":1487,"delta":12.5}
+{"fixtureId":"ft:statsbomb:3754168","date":"2016-01-16","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1497,"postRating":1484,"delta":-12.5}
+{"fixtureId":"ft:statsbomb:3754260","date":"2016-01-16","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1556,"postRating":1565,"delta":9}
+{"fixtureId":"ft:statsbomb:3754260","date":"2016-01-16","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1495,"postRating":1485,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754338","date":"2016-01-16","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1429,"postRating":1447,"delta":17.6}
+{"fixtureId":"ft:statsbomb:3754338","date":"2016-01-16","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1563,"postRating":1546,"delta":-17.6}
+{"fixtureId":"ft:statsbomb:3754250","date":"2016-01-16","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1371,"postRating":1378,"delta":6.2}
+{"fixtureId":"ft:statsbomb:3754250","date":"2016-01-16","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1614,"postRating":1608,"delta":-6.2}
+{"fixtureId":"ft:statsbomb:3754345","date":"2016-01-17","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1523,"postRating":1503,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754345","date":"2016-01-17","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1533,"postRating":1553,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754202","date":"2016-01-17","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1535,"postRating":1537,"delta":2.3}
+{"fixtureId":"ft:statsbomb:3754202","date":"2016-01-17","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1685,"postRating":1682,"delta":-2.3}
+{"fixtureId":"ft:statsbomb:3754161","date":"2016-01-18","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1421,"postRating":1435,"delta":14.7}
+{"fixtureId":"ft:statsbomb:3754161","date":"2016-01-18","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1493,"postRating":1478,"delta":-14.7}
+{"fixtureId":"ft:statsbomb:3754348","date":"2016-01-23","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1456,"postRating":1438,"delta":-18.4}
+{"fixtureId":"ft:statsbomb:3754348","date":"2016-01-23","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1503,"postRating":1522,"delta":18.4}
+{"fixtureId":"ft:statsbomb:3753975","date":"2016-01-23","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1420,"postRating":1418,"delta":-1.9}
+{"fixtureId":"ft:statsbomb:3753975","date":"2016-01-23","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1479,"postRating":1481,"delta":1.9}
+{"fixtureId":"ft:statsbomb:3754084","date":"2016-01-23","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1484,"postRating":1476,"delta":-8.5}
+{"fixtureId":"ft:statsbomb:3754084","date":"2016-01-23","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1378,"postRating":1386,"delta":8.5}
+{"fixtureId":"ft:statsbomb:3754179","date":"2016-01-23","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1485,"postRating":1469,"delta":-16.7}
+{"fixtureId":"ft:statsbomb:3754179","date":"2016-01-23","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1571,"postRating":1587,"delta":16.7}
+{"fixtureId":"ft:statsbomb:3754200","date":"2016-01-23","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1553,"postRating":1530,"delta":-23.1}
+{"fixtureId":"ft:statsbomb:3754200","date":"2016-01-23","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1487,"postRating":1510,"delta":23.1}
+{"fixtureId":"ft:statsbomb:3754271","date":"2016-01-23","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1478,"postRating":1489,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3754271","date":"2016-01-23","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1447,"postRating":1437,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3754341","date":"2016-01-23","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1608,"postRating":1617,"delta":8.7}
+{"fixtureId":"ft:statsbomb:3754341","date":"2016-01-23","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1537,"postRating":1529,"delta":-8.7}
+{"fixtureId":"ft:statsbomb:3754110","date":"2016-01-23","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1546,"postRating":1542,"delta":-3.6}
+{"fixtureId":"ft:statsbomb:3754110","date":"2016-01-23","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1565,"postRating":1569,"delta":3.6}
+{"fixtureId":"ft:statsbomb:3754163","date":"2016-01-24","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1507,"postRating":1484,"delta":-23.3}
+{"fixtureId":"ft:statsbomb:3754163","date":"2016-01-24","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1435,"postRating":1459,"delta":23.3}
+{"fixtureId":"ft:statsbomb:3754111","date":"2016-01-24","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1682,"postRating":1655,"delta":-27.5}
+{"fixtureId":"ft:statsbomb:3754111","date":"2016-01-24","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1466,"postRating":1493,"delta":27.5}
+{"fixtureId":"ft:statsbomb:3753997","date":"2016-02-02","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1542,"postRating":1548,"delta":6}
+{"fixtureId":"ft:statsbomb:3753997","date":"2016-02-02","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1386,"postRating":1380,"delta":-6}
+{"fixtureId":"ft:statsbomb:3754095","date":"2016-02-02","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1418,"postRating":1404,"delta":-13.7}
+{"fixtureId":"ft:statsbomb:3754095","date":"2016-02-02","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1569,"postRating":1583,"delta":13.7}
+{"fixtureId":"ft:statsbomb:3754201","date":"2016-02-02","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1655,"postRating":1645,"delta":-9.7}
+{"fixtureId":"ft:statsbomb:3754201","date":"2016-02-02","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1510,"postRating":1520,"delta":9.7}
+{"fixtureId":"ft:statsbomb:3754275","date":"2016-02-02","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1617,"postRating":1625,"delta":7.9}
+{"fixtureId":"ft:statsbomb:3754275","date":"2016-02-02","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1522,"postRating":1514,"delta":-7.9}
+{"fixtureId":"ft:statsbomb:3754317","date":"2016-02-02","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1438,"postRating":1424,"delta":-13.7}
+{"fixtureId":"ft:statsbomb:3754317","date":"2016-02-02","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1587,"postRating":1601,"delta":13.7}
+{"fixtureId":"ft:statsbomb:3754089","date":"2016-02-02","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1469,"postRating":1449,"delta":-20}
+{"fixtureId":"ft:statsbomb:3754089","date":"2016-02-02","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1481,"postRating":1501,"delta":20}
+{"fixtureId":"ft:statsbomb:3754094","date":"2016-02-02","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1530,"postRating":1542,"delta":11.5}
+{"fixtureId":"ft:statsbomb:3754094","date":"2016-02-02","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1529,"postRating":1517,"delta":-11.5}
+{"fixtureId":"ft:statsbomb:3754340","date":"2016-02-02","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1476,"postRating":1470,"delta":-5.2}
+{"fixtureId":"ft:statsbomb:3754340","date":"2016-02-02","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1459,"postRating":1464,"delta":5.2}
+{"fixtureId":"ft:statsbomb:3754103","date":"2016-02-03","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1489,"postRating":1484,"delta":-4.3}
+{"fixtureId":"ft:statsbomb:3754103","date":"2016-02-03","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1493,"postRating":1498,"delta":4.3}
+{"fixtureId":"ft:statsbomb:3754252","date":"2016-02-03","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1484,"postRating":1494,"delta":9.6}
+{"fixtureId":"ft:statsbomb:3754252","date":"2016-02-03","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1437,"postRating":1427,"delta":-9.6}
+{"fixtureId":"ft:statsbomb:3754290","date":"2016-02-06","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1583,"postRating":1564,"delta":-18.7}
+{"fixtureId":"ft:statsbomb:3754290","date":"2016-02-06","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1625,"postRating":1643,"delta":18.7}
+{"fixtureId":"ft:statsbomb:3754080","date":"2016-02-06","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1601,"postRating":1608,"delta":7.1}
+{"fixtureId":"ft:statsbomb:3754080","date":"2016-02-06","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1484,"postRating":1477,"delta":-7.1}
+{"fixtureId":"ft:statsbomb:3754127","date":"2016-02-06","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1517,"postRating":1496,"delta":-21.5}
+{"fixtureId":"ft:statsbomb:3754127","date":"2016-02-06","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1494,"postRating":1515,"delta":21.5}
+{"fixtureId":"ft:statsbomb:3754292","date":"2016-02-06","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1427,"postRating":1441,"delta":13.4}
+{"fixtureId":"ft:statsbomb:3754292","date":"2016-02-06","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1470,"postRating":1457,"delta":-13.4}
+{"fixtureId":"ft:statsbomb:3754303","date":"2016-02-06","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1464,"postRating":1459,"delta":-5.1}
+{"fixtureId":"ft:statsbomb:3754303","date":"2016-02-06","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1449,"postRating":1454,"delta":5.1}
+{"fixtureId":"ft:statsbomb:3754306","date":"2016-02-06","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1380,"postRating":1394,"delta":13.4}
+{"fixtureId":"ft:statsbomb:3754306","date":"2016-02-06","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1424,"postRating":1411,"delta":-13.4}
+{"fixtureId":"ft:statsbomb:3754316","date":"2016-02-06","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1514,"postRating":1505,"delta":-8.6}
+{"fixtureId":"ft:statsbomb:3754316","date":"2016-02-06","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1404,"postRating":1413,"delta":8.6}
+{"fixtureId":"ft:statsbomb:3754120","date":"2016-02-06","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1520,"postRating":1533,"delta":12.7}
+{"fixtureId":"ft:statsbomb:3754120","date":"2016-02-06","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1548,"postRating":1535,"delta":-12.7}
+{"fixtureId":"ft:statsbomb:3754253","date":"2016-02-07","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1501,"postRating":1487,"delta":-14}
+{"fixtureId":"ft:statsbomb:3754253","date":"2016-02-07","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1645,"postRating":1659,"delta":14}
+{"fixtureId":"ft:statsbomb:3754281","date":"2016-02-07","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1498,"postRating":1495,"delta":-2.6}
+{"fixtureId":"ft:statsbomb:3754281","date":"2016-02-07","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1542,"postRating":1544,"delta":2.6}
+{"fixtureId":"ft:statsbomb:3754031","date":"2016-02-13","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1413,"postRating":1430,"delta":17.4}
+{"fixtureId":"ft:statsbomb:3754031","date":"2016-02-13","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1544,"postRating":1527,"delta":-17.4}
+{"fixtureId":"ft:statsbomb:3754039","date":"2016-02-13","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1454,"postRating":1434,"delta":-19.5}
+{"fixtureId":"ft:statsbomb:3754039","date":"2016-02-13","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1477,"postRating":1497,"delta":19.5}
+{"fixtureId":"ft:statsbomb:3754139","date":"2016-02-13","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1459,"postRating":1442,"delta":-17.2}
+{"fixtureId":"ft:statsbomb:3754139","date":"2016-02-13","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1533,"postRating":1550,"delta":17.2}
+{"fixtureId":"ft:statsbomb:3754244","date":"2016-02-13","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1411,"postRating":1412,"delta":1.1}
+{"fixtureId":"ft:statsbomb:3754244","date":"2016-02-13","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1535,"postRating":1534,"delta":-1.1}
+{"fixtureId":"ft:statsbomb:3754274","date":"2016-02-13","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1487,"postRating":1467,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754274","date":"2016-02-13","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1496,"postRating":1516,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754350","date":"2016-02-13","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1515,"postRating":1492,"delta":-22.8}
+{"fixtureId":"ft:statsbomb:3754350","date":"2016-02-13","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1457,"postRating":1480,"delta":22.8}
+{"fixtureId":"ft:statsbomb:3754264","date":"2016-02-13","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1495,"postRating":1504,"delta":9.3}
+{"fixtureId":"ft:statsbomb:3754264","date":"2016-02-13","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1441,"postRating":1431,"delta":-9.3}
+{"fixtureId":"ft:statsbomb:3754261","date":"2016-02-14","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1659,"postRating":1670,"delta":10.9}
+{"fixtureId":"ft:statsbomb:3754261","date":"2016-02-14","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1643,"postRating":1632,"delta":-10.9}
+{"fixtureId":"ft:statsbomb:3754214","date":"2016-02-14","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1394,"postRating":1378,"delta":-15.5}
+{"fixtureId":"ft:statsbomb:3754214","date":"2016-02-14","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1505,"postRating":1521,"delta":15.5}
+{"fixtureId":"ft:statsbomb:3754147","date":"2016-02-14","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1564,"postRating":1545,"delta":-18.5}
+{"fixtureId":"ft:statsbomb:3754147","date":"2016-02-14","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1608,"postRating":1627,"delta":18.5}
+{"fixtureId":"ft:statsbomb:3754331","date":"2016-02-27","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1534,"postRating":1542,"delta":7.5}
+{"fixtureId":"ft:statsbomb:3754331","date":"2016-02-27","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1430,"postRating":1423,"delta":-7.5}
+{"fixtureId":"ft:statsbomb:3754049","date":"2016-02-27","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1632,"postRating":1637,"delta":4.4}
+{"fixtureId":"ft:statsbomb:3754049","date":"2016-02-27","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1412,"postRating":1407,"delta":-4.4}
+{"fixtureId":"ft:statsbomb:3754012","date":"2016-02-27","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1550,"postRating":1527,"delta":-22.3}
+{"fixtureId":"ft:statsbomb:3754012","date":"2016-02-27","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1504,"postRating":1527,"delta":22.3}
+{"fixtureId":"ft:statsbomb:3754121","date":"2016-02-27","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1497,"postRating":1491,"delta":-5.7}
+{"fixtureId":"ft:statsbomb:3754121","date":"2016-02-27","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1467,"postRating":1472,"delta":5.7}
+{"fixtureId":"ft:statsbomb:3754321","date":"2016-02-27","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1516,"postRating":1522,"delta":6.5}
+{"fixtureId":"ft:statsbomb:3754321","date":"2016-02-27","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1378,"postRating":1372,"delta":-6.5}
+{"fixtureId":"ft:statsbomb:3754236","date":"2016-02-27","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1480,"postRating":1490,"delta":9.7}
+{"fixtureId":"ft:statsbomb:3754236","date":"2016-02-27","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1434,"postRating":1425,"delta":-9.7}
+{"fixtureId":"ft:statsbomb:3754239","date":"2016-02-28","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1527,"postRating":1545,"delta":18}
+{"fixtureId":"ft:statsbomb:3754239","date":"2016-02-28","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1670,"postRating":1652,"delta":-18}
+{"fixtureId":"ft:statsbomb:3754324","date":"2016-02-28","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1627,"postRating":1632,"delta":5.2}
+{"fixtureId":"ft:statsbomb:3754324","date":"2016-02-28","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1442,"postRating":1436,"delta":-5.2}
+{"fixtureId":"ft:statsbomb:3754050","date":"2016-03-01","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1423,"postRating":1418,"delta":-4.4}
+{"fixtureId":"ft:statsbomb:3754050","date":"2016-03-01","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1425,"postRating":1429,"delta":4.4}
+{"fixtureId":"ft:statsbomb:3754231","date":"2016-03-01","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1637,"postRating":1627,"delta":-9.8}
+{"fixtureId":"ft:statsbomb:3754231","date":"2016-03-01","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1490,"postRating":1499,"delta":9.8}
+{"fixtureId":"ft:statsbomb:3754280","date":"2016-03-01","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1407,"postRating":1392,"delta":-15.1}
+{"fixtureId":"ft:statsbomb:3754280","date":"2016-03-01","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1527,"postRating":1542,"delta":15.1}
+{"fixtureId":"ft:statsbomb:3754327","date":"2016-03-01","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1372,"postRating":1357,"delta":-15.1}
+{"fixtureId":"ft:statsbomb:3754327","date":"2016-03-01","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1492,"postRating":1507,"delta":15.1}
+{"fixtureId":"ft:statsbomb:3754334","date":"2016-03-01","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1472,"postRating":1486,"delta":13.9}
+{"fixtureId":"ft:statsbomb:3754334","date":"2016-03-01","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1527,"postRating":1513,"delta":-13.9}
+{"fixtureId":"ft:statsbomb:3753976","date":"2016-03-02","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1652,"postRating":1624,"delta":-27.5}
+{"fixtureId":"ft:statsbomb:3753976","date":"2016-03-02","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1436,"postRating":1464,"delta":27.5}
+{"fixtureId":"ft:statsbomb:3754005","date":"2016-03-02","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1522,"postRating":1530,"delta":8}
+{"fixtureId":"ft:statsbomb:3754005","date":"2016-03-02","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1431,"postRating":1423,"delta":-8}
+{"fixtureId":"ft:statsbomb:3754349","date":"2016-03-02","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1542,"postRating":1557,"delta":15.5}
+{"fixtureId":"ft:statsbomb:3754349","date":"2016-03-02","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1632,"postRating":1616,"delta":-15.5}
+{"fixtureId":"ft:statsbomb:3753991","date":"2016-03-02","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1521,"postRating":1533,"delta":12.6}
+{"fixtureId":"ft:statsbomb:3753991","date":"2016-03-02","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1545,"postRating":1533,"delta":-12.6}
+{"fixtureId":"ft:statsbomb:3754232","date":"2016-03-02","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1545,"postRating":1554,"delta":9.4}
+{"fixtureId":"ft:statsbomb:3754232","date":"2016-03-02","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1491,"postRating":1482,"delta":-9.4}
+{"fixtureId":"ft:statsbomb:3754318","date":"2016-03-05","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1616,"postRating":1612,"delta":-4.1}
+{"fixtureId":"ft:statsbomb:3754318","date":"2016-03-05","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1624,"postRating":1629,"delta":4.1}
+{"fixtureId":"ft:statsbomb:3754061","date":"2016-03-05","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1542,"postRating":1537,"delta":-5}
+{"fixtureId":"ft:statsbomb:3754061","date":"2016-03-05","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1530,"postRating":1535,"delta":5}
+{"fixtureId":"ft:statsbomb:3754151","date":"2016-03-05","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1464,"postRating":1473,"delta":8.7}
+{"fixtureId":"ft:statsbomb:3754151","date":"2016-03-05","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1392,"postRating":1384,"delta":-8.7}
+{"fixtureId":"ft:statsbomb:3754164","date":"2016-03-05","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1513,"postRating":1505,"delta":-8.2}
+{"fixtureId":"ft:statsbomb:3754164","date":"2016-03-05","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1418,"postRating":1426,"delta":8.2}
+{"fixtureId":"ft:statsbomb:3754177","date":"2016-03-05","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1423,"postRating":1406,"delta":-17.7}
+{"fixtureId":"ft:statsbomb:3754177","date":"2016-03-05","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1486,"postRating":1504,"delta":17.7}
+{"fixtureId":"ft:statsbomb:3754249","date":"2016-03-05","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1533,"postRating":1538,"delta":5.4}
+{"fixtureId":"ft:statsbomb:3754249","date":"2016-03-05","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1357,"postRating":1351,"delta":-5.4}
+{"fixtureId":"ft:statsbomb:3754277","date":"2016-03-05","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1507,"postRating":1489,"delta":-18.3}
+{"fixtureId":"ft:statsbomb:3754277","date":"2016-03-05","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1557,"postRating":1576,"delta":18.3}
+{"fixtureId":"ft:statsbomb:3754289","date":"2016-03-05","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1482,"postRating":1468,"delta":-13.9}
+{"fixtureId":"ft:statsbomb:3754289","date":"2016-03-05","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1627,"postRating":1641,"delta":13.9}
+{"fixtureId":"ft:statsbomb:3754220","date":"2016-03-06","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1429,"postRating":1413,"delta":-15.8}
+{"fixtureId":"ft:statsbomb:3754220","date":"2016-03-06","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1533,"postRating":1549,"delta":15.8}
+{"fixtureId":"ft:statsbomb:3754081","date":"2016-03-06","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1499,"postRating":1513,"delta":13.9}
+{"fixtureId":"ft:statsbomb:3754081","date":"2016-03-06","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1554,"postRating":1540,"delta":-13.9}
+{"fixtureId":"ft:statsbomb:3754313","date":"2016-03-12","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1384,"postRating":1386,"delta":2.5}
+{"fixtureId":"ft:statsbomb:3754313","date":"2016-03-12","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1538,"postRating":1536,"delta":-2.5}
+{"fixtureId":"ft:statsbomb:3753988","date":"2016-03-12","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1504,"postRating":1514,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3753988","date":"2016-03-12","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1473,"postRating":1462,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3754196","date":"2016-03-12","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1535,"postRating":1514,"delta":-21.7}
+{"fixtureId":"ft:statsbomb:3754196","date":"2016-03-12","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1505,"postRating":1527,"delta":21.7}
+{"fixtureId":"ft:statsbomb:3754053","date":"2016-03-13","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1351,"postRating":1342,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754053","date":"2016-03-13","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1612,"postRating":1621,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754002","date":"2016-03-14","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1641,"postRating":1645,"delta":4.1}
+{"fixtureId":"ft:statsbomb:3754002","date":"2016-03-14","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1406,"postRating":1401,"delta":-4.1}
+{"fixtureId":"ft:statsbomb:3753980","date":"2016-03-19","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1489,"postRating":1475,"delta":-14.2}
+{"fixtureId":"ft:statsbomb:3753980","date":"2016-03-19","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1629,"postRating":1643,"delta":14.2}
+{"fixtureId":"ft:statsbomb:3754052","date":"2016-03-19","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1513,"postRating":1488,"delta":-25.2}
+{"fixtureId":"ft:statsbomb:3754052","date":"2016-03-19","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1386,"postRating":1411,"delta":25.2}
+{"fixtureId":"ft:statsbomb:3753973","date":"2016-03-19","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1537,"postRating":1534,"delta":-2.8}
+{"fixtureId":"ft:statsbomb:3753973","date":"2016-03-19","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1576,"postRating":1578,"delta":2.8}
+{"fixtureId":"ft:statsbomb:3753977","date":"2016-03-19","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1468,"postRating":1449,"delta":-18.5}
+{"fixtureId":"ft:statsbomb:3753977","date":"2016-03-19","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1514,"postRating":1532,"delta":18.5}
+{"fixtureId":"ft:statsbomb:3754181","date":"2016-03-19","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1413,"postRating":1403,"delta":-10.2}
+{"fixtureId":"ft:statsbomb:3754181","date":"2016-03-19","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1645,"postRating":1655,"delta":10.2}
+{"fixtureId":"ft:statsbomb:3754224","date":"2016-03-19","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1462,"postRating":1469,"delta":7}
+{"fixtureId":"ft:statsbomb:3754224","date":"2016-03-19","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1342,"postRating":1335,"delta":-7}
+{"fixtureId":"ft:statsbomb:3754064","date":"2016-03-20","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1527,"postRating":1540,"delta":12.5}
+{"fixtureId":"ft:statsbomb:3754064","date":"2016-03-20","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1549,"postRating":1537,"delta":-12.5}
+{"fixtureId":"ft:statsbomb:3754100","date":"2016-03-20","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1401,"postRating":1398,"delta":-3.4}
+{"fixtureId":"ft:statsbomb:3754100","date":"2016-03-20","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1426,"postRating":1430,"delta":3.4}
+{"fixtureId":"ft:statsbomb:3754043","date":"2016-03-20","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1621,"postRating":1629,"delta":7.4}
+{"fixtureId":"ft:statsbomb:3754043","date":"2016-03-20","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1514,"postRating":1507,"delta":-7.4}
+{"fixtureId":"ft:statsbomb:3754124","date":"2016-03-20","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1536,"postRating":1515,"delta":-20.3}
+{"fixtureId":"ft:statsbomb:3754124","date":"2016-03-20","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1540,"postRating":1560,"delta":20.3}
+{"fixtureId":"ft:statsbomb:3754075","date":"2016-04-02","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1335,"postRating":1324,"delta":-11.6}
+{"fixtureId":"ft:statsbomb:3754075","date":"2016-04-02","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1534,"postRating":1546,"delta":11.6}
+{"fixtureId":"ft:statsbomb:3754175","date":"2016-04-02","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1430,"postRating":1428,"delta":-1.9}
+{"fixtureId":"ft:statsbomb:3754175","date":"2016-04-02","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1488,"postRating":1490,"delta":1.9}
+{"fixtureId":"ft:statsbomb:3754118","date":"2016-04-02","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1643,"postRating":1648,"delta":5}
+{"fixtureId":"ft:statsbomb:3754118","date":"2016-04-02","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1449,"postRating":1444,"delta":-5}
+{"fixtureId":"ft:statsbomb:3754144","date":"2016-04-02","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1507,"postRating":1487,"delta":-20.1}
+{"fixtureId":"ft:statsbomb:3754144","date":"2016-04-02","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1515,"postRating":1536,"delta":20.1}
+{"fixtureId":"ft:statsbomb:3754176","date":"2016-04-02","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1578,"postRating":1568,"delta":-10.6}
+{"fixtureId":"ft:statsbomb:3754176","date":"2016-04-02","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1403,"postRating":1414,"delta":10.6}
+{"fixtureId":"ft:statsbomb:3754243","date":"2016-04-02","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1411,"postRating":1422,"delta":11}
+{"fixtureId":"ft:statsbomb:3754243","date":"2016-04-02","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1398,"postRating":1387,"delta":-11}
+{"fixtureId":"ft:statsbomb:3754272","date":"2016-04-02","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1532,"postRating":1525,"delta":-7}
+{"fixtureId":"ft:statsbomb:3754272","date":"2016-04-02","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1469,"postRating":1476,"delta":7}
+{"fixtureId":"ft:statsbomb:3754087","date":"2016-04-02","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1537,"postRating":1536,"delta":-0.4}
+{"fixtureId":"ft:statsbomb:3754087","date":"2016-04-02","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1629,"postRating":1629,"delta":0.4}
+{"fixtureId":"ft:statsbomb:3753982","date":"2016-04-03","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1655,"postRating":1662,"delta":7.2}
+{"fixtureId":"ft:statsbomb:3753982","date":"2016-04-03","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1540,"postRating":1532,"delta":-7.2}
+{"fixtureId":"ft:statsbomb:3754299","date":"2016-04-03","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1560,"postRating":1569,"delta":8.2}
+{"fixtureId":"ft:statsbomb:3754299","date":"2016-04-03","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1475,"postRating":1467,"delta":-8.2}
+{"fixtureId":"ft:statsbomb:3754241","date":"2016-04-09","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1568,"postRating":1567,"delta":-0.9}
+{"fixtureId":"ft:statsbomb:3754241","date":"2016-04-09","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1648,"postRating":1649,"delta":0.9}
+{"fixtureId":"ft:statsbomb:3754016","date":"2016-04-09","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1532,"postRating":1539,"delta":6.3}
+{"fixtureId":"ft:statsbomb:3754016","date":"2016-04-09","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1387,"postRating":1381,"delta":-6.3}
+{"fixtureId":"ft:statsbomb:3754022","date":"2016-04-09","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1414,"postRating":1426,"delta":11.9}
+{"fixtureId":"ft:statsbomb:3754022","date":"2016-04-09","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1422,"postRating":1410,"delta":-11.9}
+{"fixtureId":"ft:statsbomb:3754030","date":"2016-04-09","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1444,"postRating":1441,"delta":-3.5}
+{"fixtureId":"ft:statsbomb:3754030","date":"2016-04-09","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1467,"postRating":1470,"delta":3.5}
+{"fixtureId":"ft:statsbomb:3754116","date":"2016-04-09","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1476,"postRating":1491,"delta":14.6}
+{"fixtureId":"ft:statsbomb:3754116","date":"2016-04-09","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1546,"postRating":1531,"delta":-14.6}
+{"fixtureId":"ft:statsbomb:3754262","date":"2016-04-09","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1324,"postRating":1310,"delta":-13.1}
+{"fixtureId":"ft:statsbomb:3754262","date":"2016-04-09","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1487,"postRating":1500,"delta":13.1}
+{"fixtureId":"ft:statsbomb:3754035","date":"2016-04-09","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1536,"postRating":1545,"delta":9.7}
+{"fixtureId":"ft:statsbomb:3754035","date":"2016-04-09","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1490,"postRating":1480,"delta":-9.7}
+{"fixtureId":"ft:statsbomb:3754152","date":"2016-04-10","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1428,"postRating":1418,"delta":-10.1}
+{"fixtureId":"ft:statsbomb:3754152","date":"2016-04-10","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1662,"postRating":1672,"delta":10.1}
+{"fixtureId":"ft:statsbomb:3753986","date":"2016-04-10","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1536,"postRating":1547,"delta":11.1}
+{"fixtureId":"ft:statsbomb:3753986","date":"2016-04-10","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1525,"postRating":1514,"delta":-11.1}
+{"fixtureId":"ft:statsbomb:3754209","date":"2016-04-10","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1629,"postRating":1638,"delta":9.1}
+{"fixtureId":"ft:statsbomb:3754209","date":"2016-04-10","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1569,"postRating":1559,"delta":-9.1}
+{"fixtureId":"ft:statsbomb:3754048","date":"2016-04-13","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1426,"postRating":1423,"delta":-2.5}
+{"fixtureId":"ft:statsbomb:3754048","date":"2016-04-13","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1470,"postRating":1473,"delta":2.5}
+{"fixtureId":"ft:statsbomb:3754172","date":"2016-04-16","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1410,"postRating":1390,"delta":-20.2}
+{"fixtureId":"ft:statsbomb:3754172","date":"2016-04-16","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1418,"postRating":1438,"delta":20.2}
+{"fixtureId":"ft:statsbomb:3754024","date":"2016-04-16","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1381,"postRating":1397,"delta":16.5}
+{"fixtureId":"ft:statsbomb:3754024","date":"2016-04-16","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1491,"postRating":1474,"delta":-16.5}
+{"fixtureId":"ft:statsbomb:3754137","date":"2016-04-16","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1473,"postRating":1471,"delta":-1.6}
+{"fixtureId":"ft:statsbomb:3754137","date":"2016-04-16","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1539,"postRating":1540,"delta":1.6}
+{"fixtureId":"ft:statsbomb:3754155","date":"2016-04-16","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1480,"postRating":1458,"delta":-22.1}
+{"fixtureId":"ft:statsbomb:3754155","date":"2016-04-16","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1441,"postRating":1463,"delta":22.1}
+{"fixtureId":"ft:statsbomb:3754295","date":"2016-04-16","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1559,"postRating":1563,"delta":3.8}
+{"fixtureId":"ft:statsbomb:3754295","date":"2016-04-16","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1310,"postRating":1307,"delta":-3.8}
+{"fixtureId":"ft:statsbomb:3754322","date":"2016-04-16","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1531,"postRating":1511,"delta":-19.9}
+{"fixtureId":"ft:statsbomb:3754322","date":"2016-04-16","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1545,"postRating":1565,"delta":19.9}
+{"fixtureId":"ft:statsbomb:3754216","date":"2016-04-17","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1500,"postRating":1481,"delta":-18.4}
+{"fixtureId":"ft:statsbomb:3754216","date":"2016-04-17","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1547,"postRating":1566,"delta":18.4}
+{"fixtureId":"ft:statsbomb:3754227","date":"2016-04-17","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1672,"postRating":1664,"delta":-8.5}
+{"fixtureId":"ft:statsbomb:3754227","date":"2016-04-17","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1567,"postRating":1575,"delta":8.5}
+{"fixtureId":"ft:statsbomb:3754009","date":"2016-04-17","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1649,"postRating":1637,"delta":-11.7}
+{"fixtureId":"ft:statsbomb:3754009","date":"2016-04-17","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1423,"postRating":1435,"delta":11.7}
+{"fixtureId":"ft:statsbomb:3754187","date":"2016-04-18","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1514,"postRating":1499,"delta":-14.9}
+{"fixtureId":"ft:statsbomb:3754187","date":"2016-04-18","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1638,"postRating":1653,"delta":14.9}
+{"fixtureId":"ft:statsbomb:3754206","date":"2016-04-19","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1397,"postRating":1400,"delta":3.1}
+{"fixtureId":"ft:statsbomb:3754206","date":"2016-04-19","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1565,"postRating":1562,"delta":-3.1}
+{"fixtureId":"ft:statsbomb:3754086","date":"2016-04-20","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1575,"postRating":1583,"delta":7.3}
+{"fixtureId":"ft:statsbomb:3754086","date":"2016-04-20","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1463,"postRating":1456,"delta":-7.3}
+{"fixtureId":"ft:statsbomb:3754294","date":"2016-04-20","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1566,"postRating":1573,"delta":7.9}
+{"fixtureId":"ft:statsbomb:3754294","date":"2016-04-20","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1471,"postRating":1463,"delta":-7.9}
+{"fixtureId":"ft:statsbomb:3754310","date":"2016-04-20","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1563,"postRating":1570,"delta":6.8}
+{"fixtureId":"ft:statsbomb:3754310","date":"2016-04-20","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1435,"postRating":1428,"delta":-6.8}
+{"fixtureId":"ft:statsbomb:3754284","date":"2016-04-21","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1637,"postRating":1642,"delta":5.4}
+{"fixtureId":"ft:statsbomb:3754284","date":"2016-04-21","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1458,"postRating":1453,"delta":-5.4}
+{"fixtureId":"ft:statsbomb:3754307","date":"2016-04-23","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1562,"postRating":1571,"delta":9}
+{"fixtureId":"ft:statsbomb:3754307","date":"2016-04-23","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1499,"postRating":1490,"delta":-9}
+{"fixtureId":"ft:statsbomb:3754154","date":"2016-04-23","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1573,"postRating":1563,"delta":-10.5}
+{"fixtureId":"ft:statsbomb:3754154","date":"2016-04-23","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1400,"postRating":1411,"delta":10.5}
+{"fixtureId":"ft:statsbomb:3754242","date":"2016-04-23","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1481,"postRating":1462,"delta":-19.2}
+{"fixtureId":"ft:statsbomb:3754242","date":"2016-04-23","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1511,"postRating":1530,"delta":19.2}
+{"fixtureId":"ft:statsbomb:3754282","date":"2016-04-23","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1307,"postRating":1297,"delta":-10.1}
+{"fixtureId":"ft:statsbomb:3754282","date":"2016-04-23","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1540,"postRating":1550,"delta":10.1}
+{"fixtureId":"ft:statsbomb:3753990","date":"2016-04-24","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1438,"postRating":1443,"delta":4.7}
+{"fixtureId":"ft:statsbomb:3753990","date":"2016-04-24","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1642,"postRating":1638,"delta":-4.7}
+{"fixtureId":"ft:statsbomb:3754228","date":"2016-04-24","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1664,"postRating":1669,"delta":5.1}
+{"fixtureId":"ft:statsbomb:3754228","date":"2016-04-24","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1474,"postRating":1469,"delta":-5.1}
+{"fixtureId":"ft:statsbomb:3754332","date":"2016-04-25","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1653,"postRating":1642,"delta":-11.2}
+{"fixtureId":"ft:statsbomb:3754332","date":"2016-04-25","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1453,"postRating":1464,"delta":11.2}
+{"fixtureId":"ft:statsbomb:3754037","date":"2016-04-30","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1463,"postRating":1475,"delta":11.5}
+{"fixtureId":"ft:statsbomb:3754037","date":"2016-04-30","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1462,"postRating":1451,"delta":-11.5}
+{"fixtureId":"ft:statsbomb:3754063","date":"2016-04-30","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1456,"postRating":1461,"delta":5.9}
+{"fixtureId":"ft:statsbomb:3754063","date":"2016-04-30","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1297,"postRating":1291,"delta":-5.9}
+{"fixtureId":"ft:statsbomb:3754132","date":"2016-04-30","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1490,"postRating":1484,"delta":-6.4}
+{"fixtureId":"ft:statsbomb:3754132","date":"2016-04-30","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1443,"postRating":1449,"delta":6.4}
+{"fixtureId":"ft:statsbomb:3754170","date":"2016-04-30","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1411,"postRating":1423,"delta":12.3}
+{"fixtureId":"ft:statsbomb:3754170","date":"2016-04-30","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1428,"postRating":1416,"delta":-12.3}
+{"fixtureId":"ft:statsbomb:3754192","date":"2016-04-30","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1464,"postRating":1449,"delta":-15.1}
+{"fixtureId":"ft:statsbomb:3754192","date":"2016-04-30","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1583,"postRating":1598,"delta":15.1}
+{"fixtureId":"ft:statsbomb:3754184","date":"2016-04-30","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1638,"postRating":1641,"delta":3.8}
+{"fixtureId":"ft:statsbomb:3754184","date":"2016-04-30","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1390,"postRating":1386,"delta":-3.8}
+{"fixtureId":"ft:statsbomb:3754018","date":"2016-05-01","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1469,"postRating":1485,"delta":15.7}
+{"fixtureId":"ft:statsbomb:3754018","date":"2016-05-01","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1563,"postRating":1547,"delta":-15.7}
+{"fixtureId":"ft:statsbomb:3754165","date":"2016-05-01","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1570,"postRating":1570,"delta":0}
+{"fixtureId":"ft:statsbomb:3754165","date":"2016-05-01","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1669,"postRating":1669,"delta":0}
+{"fixtureId":"ft:statsbomb:3754320","date":"2016-05-01","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1550,"postRating":1563,"delta":12.4}
+{"fixtureId":"ft:statsbomb:3754320","date":"2016-05-01","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1571,"postRating":1559,"delta":-12.4}
+{"fixtureId":"ft:statsbomb:3754092","date":"2016-05-02","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1530,"postRating":1531,"delta":0.5}
+{"fixtureId":"ft:statsbomb:3754092","date":"2016-05-02","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1642,"postRating":1641,"delta":-0.5}
+{"fixtureId":"ft:statsbomb:3754210","date":"2016-05-07","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1386,"postRating":1374,"delta":-12.2}
+{"fixtureId":"ft:statsbomb:3754210","date":"2016-05-07","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1570,"postRating":1582,"delta":12.2}
+{"fixtureId":"ft:statsbomb:3754026","date":"2016-05-07","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1416,"postRating":1430,"delta":14.5}
+{"fixtureId":"ft:statsbomb:3754026","date":"2016-05-07","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1484,"postRating":1469,"delta":-14.5}
+{"fixtureId":"ft:statsbomb:3754070","date":"2016-05-07","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1291,"postRating":1292,"delta":1.5}
+{"fixtureId":"ft:statsbomb:3754070","date":"2016-05-07","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1423,"postRating":1422,"delta":-1.5}
+{"fixtureId":"ft:statsbomb:3754108","date":"2016-05-07","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1449,"postRating":1464,"delta":15.2}
+{"fixtureId":"ft:statsbomb:3754108","date":"2016-05-07","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1531,"postRating":1516,"delta":-15.2}
+{"fixtureId":"ft:statsbomb:3754158","date":"2016-05-07","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1598,"postRating":1573,"delta":-24.7}
+{"fixtureId":"ft:statsbomb:3754158","date":"2016-05-07","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1485,"postRating":1510,"delta":24.7}
+{"fixtureId":"ft:statsbomb:3754225","date":"2016-05-07","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1451,"postRating":1446,"delta":-4.6}
+{"fixtureId":"ft:statsbomb:3754225","date":"2016-05-07","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1449,"postRating":1453,"delta":4.6}
+{"fixtureId":"ft:statsbomb:3754033","date":"2016-05-07","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1669,"postRating":1674,"delta":5}
+{"fixtureId":"ft:statsbomb:3754033","date":"2016-05-07","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1475,"postRating":1470,"delta":-5}
+{"fixtureId":"ft:statsbomb:3753992","date":"2016-05-08","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1641,"postRating":1618,"delta":-23.6}
+{"fixtureId":"ft:statsbomb:3753992","date":"2016-05-08","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1563,"postRating":1586,"delta":23.6}
+{"fixtureId":"ft:statsbomb:3754314","date":"2016-05-08","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1559,"postRating":1558,"delta":-0.8}
+{"fixtureId":"ft:statsbomb:3754314","date":"2016-05-08","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1641,"postRating":1642,"delta":0.8}
+{"fixtureId":"ft:statsbomb:3754342","date":"2016-05-08","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1547,"postRating":1555,"delta":8.2}
+{"fixtureId":"ft:statsbomb:3754342","date":"2016-05-08","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1461,"postRating":1453,"delta":-8.2}
+{"fixtureId":"ft:statsbomb:3754134","date":"2016-05-10","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1573,"postRating":1585,"delta":11.9}
+{"fixtureId":"ft:statsbomb:3754134","date":"2016-05-10","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1582,"postRating":1570,"delta":-11.9}
+{"fixtureId":"ft:statsbomb:3753989","date":"2016-05-11","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1464,"postRating":1476,"delta":11.8}
+{"fixtureId":"ft:statsbomb:3753989","date":"2016-05-11","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1470,"postRating":1458,"delta":-11.8}
+{"fixtureId":"ft:statsbomb:3754207","date":"2016-05-11","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1374,"postRating":1389,"delta":15}
+{"fixtureId":"ft:statsbomb:3754207","date":"2016-05-11","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1453,"postRating":1438,"delta":-15}
+{"fixtureId":"ft:statsbomb:3754055","date":"2016-05-11","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1555,"postRating":1549,"delta":-6.1}
+{"fixtureId":"ft:statsbomb:3754055","date":"2016-05-11","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1516,"postRating":1522,"delta":6.1}
+{"fixtureId":"ft:statsbomb:3754041","date":"2016-05-15","teamId":"ft:statsbomb:1","teamName":"Arsenal","preRating":1642,"postRating":1644,"delta":2.2}
+{"fixtureId":"ft:statsbomb:3754041","date":"2016-05-15","teamId":"ft:statsbomb:59","teamName":"Aston Villa","preRating":1292,"postRating":1290,"delta":-2.2}
+{"fixtureId":"ft:statsbomb:3754042","date":"2016-05-15","teamId":"ft:statsbomb:27","teamName":"West Bromwich Albion","preRating":1453,"postRating":1453,"delta":-0.2}
+{"fixtureId":"ft:statsbomb:3754042","date":"2016-05-15","teamId":"ft:statsbomb:24","teamName":"Liverpool","preRating":1549,"postRating":1550,"delta":0.2}
+{"fixtureId":"ft:statsbomb:3753994","date":"2016-05-15","teamId":"ft:statsbomb:25","teamName":"Southampton","preRating":1586,"postRating":1592,"delta":6}
+{"fixtureId":"ft:statsbomb:3753994","date":"2016-05-15","teamId":"ft:statsbomb:31","teamName":"Crystal Palace","preRating":1430,"postRating":1424,"delta":-6}
+{"fixtureId":"ft:statsbomb:3754123","date":"2016-05-15","teamId":"ft:statsbomb:29","teamName":"Everton","preRating":1458,"postRating":1467,"delta":8.8}
+{"fixtureId":"ft:statsbomb:3754123","date":"2016-05-15","teamId":"ft:statsbomb:56","teamName":"Norwich City","preRating":1389,"postRating":1380,"delta":-8.8}
+{"fixtureId":"ft:statsbomb:3754149","date":"2016-05-15","teamId":"ft:statsbomb:26","teamName":"Swansea City","preRating":1510,"postRating":1507,"delta":-2.4}
+{"fixtureId":"ft:statsbomb:3754149","date":"2016-05-15","teamId":"ft:statsbomb:36","teamName":"Manchester City","preRating":1558,"postRating":1560,"delta":2.4}
+{"fixtureId":"ft:statsbomb:3754199","date":"2016-05-15","teamId":"ft:statsbomb:30","teamName":"Stoke City","preRating":1469,"postRating":1486,"delta":16.7}
+{"fixtureId":"ft:statsbomb:3754199","date":"2016-05-15","teamId":"ft:statsbomb:40","teamName":"West Ham United","preRating":1585,"postRating":1568,"delta":-16.7}
+{"fixtureId":"ft:statsbomb:3754229","date":"2016-05-15","teamId":"ft:statsbomb:33","teamName":"Chelsea","preRating":1522,"postRating":1524,"delta":2.4}
+{"fixtureId":"ft:statsbomb:3754229","date":"2016-05-15","teamId":"ft:statsbomb:22","teamName":"Leicester City","preRating":1674,"postRating":1672,"delta":-2.4}
+{"fixtureId":"ft:statsbomb:3754308","date":"2016-05-15","teamId":"ft:statsbomb:23","teamName":"Watford","preRating":1438,"postRating":1435,"delta":-2.8}
+{"fixtureId":"ft:statsbomb:3754308","date":"2016-05-15","teamId":"ft:statsbomb:41","teamName":"Sunderland","preRating":1476,"postRating":1479,"delta":2.8}
+{"fixtureId":"ft:statsbomb:3754333","date":"2016-05-15","teamId":"ft:statsbomb:37","teamName":"Newcastle United","preRating":1422,"postRating":1442,"delta":20.3}
+{"fixtureId":"ft:statsbomb:3754333","date":"2016-05-15","teamId":"ft:statsbomb:38","teamName":"Tottenham Hotspur","preRating":1618,"postRating":1598,"delta":-20.3}
+{"fixtureId":"ft:statsbomb:3754159","date":"2016-05-17","teamId":"ft:statsbomb:39","teamName":"Manchester United","preRating":1570,"postRating":1577,"delta":6.9}
+{"fixtureId":"ft:statsbomb:3754159","date":"2016-05-17","teamId":"ft:statsbomb:28","teamName":"AFC Bournemouth","preRating":1446,"postRating":1439,"delta":-6.9}

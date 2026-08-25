@@ -1,0 +1,61 @@
+{
+  "evaluatedAt": "2026-08-25T07:12:42.740Z",
+  "matches": 358,
+  "warmupExcluded": 60,
+  "dixonColesV0": {
+    "accuracy": 0.4581005586592179,
+    "brier": 0.6438971504009271,
+    "logLoss": 1.0755344631697754,
+    "goalMAE": 0.975
+  },
+  "eloV0Baseline": {
+    "accuracy": 0.43575418994413406,
+    "brier": 0.6874374301675978,
+    "logLoss": 1.1355985379605444
+  },
+  "randomBaselineBrier": 0.667,
+  "calibrationDC": [
+    {
+      "bin": "0\u20130.2",
+      "predicted": 0.135,
+      "actual": 0.239,
+      "count": 67
+    },
+    {
+      "bin": "0.2\u20130.3",
+      "predicted": 0.247,
+      "actual": 0.356,
+      "count": 73
+    },
+    {
+      "bin": "0.3\u20130.4",
+      "predicted": 0.344,
+      "actual": 0.319,
+      "count": 47
+    },
+    {
+      "bin": "0.4\u20130.5",
+      "predicted": 0.445,
+      "actual": 0.475,
+      "count": 61
+    },
+    {
+      "bin": "0.5\u20130.6",
+      "predicted": 0.545,
+      "actual": 0.542,
+      "count": 48
+    },
+    {
+      "bin": "0.6\u20130.7",
+      "predicted": 0.644,
+      "actual": 0.556,
+      "count": 36
+    },
+    {
+      "bin": "0.7\u20131.001",
+      "predicted": 0.779,
+      "actual": 0.769,
+      "count": 26
+    }
+  ]
+}

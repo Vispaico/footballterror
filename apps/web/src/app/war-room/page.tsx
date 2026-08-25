@@ -18,10 +18,12 @@ async function fetchJson(url: string): Promise<any | null> {
 }
 
 export default async function WarRoom() {
-  const [powerIndex, fixtures, intelligence] = await Promise.all([
+  const [powerIndex, fixtures, intelligence, upcoming, currentResults] = await Promise.all([
     fetchJson(`${API_URL}/api/power-index`),
     fetchJson(`${API_URL}/api/fixtures?limit=500`),
     fetchJson(`${API_URL}/api/intelligence`),
+    fetchJson(`${API_URL}/api/upcoming`),
+    fetchJson(`${API_URL}/api/current-season/results`),
   ]);
 
   // Local fallbacks if API is down
@@ -128,6 +130,59 @@ export default async function WarRoom() {
             ))}
           </div>
         </section>
+
+        {/* Upcoming — live predictions */}
+        <section>
+          <div className="flex items-baseline justify-between mb-3">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-400">
+              Matchweek {Math.min(...(upcoming?.predictions ?? [{ }].map(() => 99)), 99) <= 99 ? "2" : ""} — Predictions Live
+            </h2>
+            <span className="text-[10px] text-zinc-600 font-mono">{upcoming?.modelVersion ?? "dc"}</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {(upcoming?.predictions ?? []).slice(0, 6).map((p: any) => {
+              const total = p.homeWin + p.draw + p.awayWin;
+              const hw = Math.round((p.homeWin / total) * 100);
+              const dr = Math.round((p.draw / total) * 100);
+              const aw = 100 - hw - dr;
+              return (
+                <div key={p.id} className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold text-white">{p.homeTeamName} <span className="text-zinc-600">vs</span> {p.awayTeamName}</span>
+                    <span className="text-[10px] font-mono text-zinc-600">{p.matchDate}</span>
+                  </div>
+                  <div className="flex h-1.5 rounded-full overflow-hidden mb-1.5">
+                    <div className="bg-red-500" style={{ width: `${hw}%` }} />
+                    <div className="bg-zinc-600" style={{ width: `${dr}%` }} />
+                    <div className="bg-blue-500" style={{ width: `${aw}%` }} />
+                  </div>
+                  <div className="flex justify-between text-[10px] font-mono">
+                    <span className="text-red-400">{hw}%</span>
+                    <span className="text-zinc-500">xG {p.expectedHomeGoals}–{p.expectedAwayGoals}</span>
+                    <span className="text-blue-400">{aw}%</span>
+                  </div>
+                  {p.dataNotes?.length > 0 && (
+                    <div className="mt-1.5 text-[9px] text-amber-600/80">⚠ limited history — league-average estimate used</div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Current season results ticker */}
+        {currentResults?.results?.length > 0 && (
+          <section className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3">
+            <div className="text-[10px] uppercase tracking-widest text-zinc-600 mb-1.5">Latest results — 2026/27</div>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-zinc-400">
+              {currentResults.results.slice(-8).map((m: any) => (
+                <span key={m.providerId} className="whitespace-nowrap">
+                  {m.homeTeamName} <span className="font-mono text-white">{m.homeScore}-{m.awayScore}</span> {m.awayTeamName}
+                </span>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Latest intelligence */}
         <section>

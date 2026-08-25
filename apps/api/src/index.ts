@@ -293,6 +293,58 @@ app.get("/api/match/:slug/agents", async (req, res) => {
   }
 });
 
+// ─── Upcoming fixtures + predictions (current season) ─────────────────────────
+let upcomingCache: StoreEntry[] | null = null;
+
+async function loadUpcoming(): Promise<StoreEntry[]> {
+  if (upcomingCache) return upcomingCache;
+  upcomingCache = [];
+  try {
+    const predsRaw = await fs.readFile(path.join(DB_DIR, "predictions-upcoming.jsonl"), "utf-8");
+    const list = predsRaw.split("\n").filter(Boolean).map((l) => JSON.parse(l));
+    upcomingCache = list.sort((a: any, b: any) => String(a.matchDate).localeCompare(String(b.matchDate)));
+  } catch {}
+  return upcomingCache!;
+}
+
+app.get("/api/upcoming", async (_req, res) => {
+  const items = await loadUpcoming();
+  res.json({
+    total: items.length,
+    modelVersion: items[0]?.modelVersion ?? null,
+    predictions: items,
+  });
+});
+
+app.get("/api/upcoming/:slugTail", async (req, res) => {
+  const items = await loadUpcoming();
+  const match = items.find((p: any) => p.slug === `current-${req.params.slugTail}` || p.slug?.endsWith(req.params.slugTail));
+  if (!match) return res.status(404).json({ error: "Upcoming fixture not found" });
+  res.json(match);
+});
+
+// ─── Current season results ────────────────────────────────────────────────────
+let currentResultsCache: StoreEntry[] | null = null;
+
+async function loadCurrentResults(): Promise<StoreEntry[]> {
+  if (currentResultsCache) return currentResultsCache;
+  currentResultsCache = [];
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "current-season.jsonl"), "utf-8");
+    currentResultsCache = raw.split("\n").filter(Boolean).map((l) => JSON.parse(l))
+      .sort((a: any, b: any) => String(a.date).localeCompare(String(b.date)));
+  } catch {}
+  return currentResultsCache!;
+}
+
+app.get("/api/current-season/results", async (_req, res) => {
+  const items = await loadCurrentResults();
+  res.json({ total: items.length, results: items.map((m: any) => ({
+    date: m.date, homeTeamName: m.homeTeamName, awayTeamName: m.awayTeamName,
+    homeScore: m.homeScore, awayScore: m.awayScore, season: m.season, providerId: m.providerId,
+  }))});
+});
+
 // ─── Intelligence feed: latest Terror verdicts ────────────────────────────────
 app.get("/api/intelligence", async (_req, res) => {
   try {

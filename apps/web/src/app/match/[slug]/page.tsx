@@ -9,15 +9,61 @@ const DATA_DIR = process.env.MATCH_DATA_DIR
       .map((p) => path.resolve(process.cwd(), p))
       .find((p) => existsSync(p)) ?? path.resolve(process.cwd(), "../../data/match-output");
 
-async function getMatch(slug: string) {
-  // Try API first, fallback to local file
+interface MatchData { [k: string]: any }
+
+async function getMatch(slug: string): Promise<MatchData | null> {
+  let match: MatchData | null = null;
   try {
     const resp = await fetch(`${API_URL}/api/match/${slug}`);
-    if (resp.ok) return resp.json();
+    if (resp.ok) match = await resp.json();
   } catch {}
-  try {
-    return JSON.parse(await fs.readFile(path.join(DATA_DIR, `${slug}.json`), "utf-8"));
-  } catch { return null; }
+  if (!match) {
+    try { match = JSON.parse(await fs.readFile(path.join(DATA_DIR, `${slug}.json`), "utf-8")); } catch {}
+  }
+  if (!match) return null;
+
+  // Enrich: DC prediction + agent analysis via API (parallel, non-fatal)
+  const [predResp, agentsResp] = await Promise.all([
+    fetch(`${API_URL}/api/match/${slug}/prediction`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch(`${API_URL}/api/match/${slug}/agents`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+  ]);
+
+  if (predResp?.prediction && !match.prediction) {
+    match.prediction = {
+      homeWin: predResp.prediction.homeWin,
+      draw: predResp.prediction.draw,
+      awayWin: predResp.prediction.awayWin,
+      expectedHomeGoals: predResp.prediction.expectedHomeGoals ?? null,
+      expectedAwayGoals: predResp.prediction.expectedAwayGoals ?? null,
+      topScores: predResp.prediction.topScores ?? [],
+      confidence: predResp.prediction.confidence ?? 0.5,
+      entropy: 1,
+      modelVersion: predResp.prediction.modelVersion ?? "unknown",
+      informationCutoff: predResp.prediction.informationCutoff,
+    };
+  }
+
+  if (agentsResp && !match.verdict) {
+    match.verdict = agentsResp.verdict ?? null;
+    match.allClaims = agentsResp.claims ?? [];
+    match.agentSource = agentsResp.source ?? null;
+  }
+
+  // Normalize field aliases between demo + bulk payload shapes
+  const fx = match.fixture ?? {};
+  match.homeTeamName = match.homeTeamName ?? fx.homeTeamName;
+  match.awayTeamName = match.awayTeamName ?? fx.awayTeamName;
+
+  // Actual result (bulk store keeps it on fixture)
+  match.actual = match.actual ?? {
+    homeGoals: fx.homeScore,
+    awayGoals: fx.awayScore,
+  };
+
+  // Elo from ratings store is not per-match in bulk payloads — hide section if absent
+  match.elo = match.elo ?? null;
+
+  return match;
 }
 
 function ScoreHeader({ match }: { match: any }) {
@@ -120,6 +166,27 @@ function TerrorMeter({ score, level }: { score: number; level: string }) {
   );
 }
 
+function ScoreGrid({ topScores }: { topScores: { score: string; probability: number }[] }) {
+  return (
+    <div className="space-y-1.5">
+      {topScores.map((s, i) => (
+        <div key={s.score} className="flex items-center gap-3">
+          <span className="w-10 font-mono text-sm text-white">{s.score}</span>
+          <div className="flex-1 h-4 bg-zinc-800 rounded overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-red-900 to-red-500 flex items-center justify-end pr-2"
+              style={{ width: `${Math.max(6, (s.probability / (topScores[0]?.probability || 1)) * 100)}%` }}
+            >
+              <span className="text-[10px] font-mono text-white">{(s.probability * 100).toFixed(1)}%</span>
+            </div>
+          </div>
+          {i === 0 && <span className="text-[9px] uppercase tracking-widest text-red-500">most likely</span>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function EvidenceTag({ type }: { type: string }) {
   const colors: Record<string, string> = { FACT: "bg-green-900/50 text-green-400", MODEL_OUTPUT: "bg-blue-900/50 text-blue-400", FORECAST: "bg-purple-900/50 text-purple-400", INFERENCE: "bg-amber-900/50 text-amber-400", OPINION: "bg-pink-900/50 text-pink-400", UNKNOWN: "bg-zinc-800 text-zinc-500" };
   return <span className={`inline-block px-1.5 py-0.5 rounded text-[9px] font-bold uppercase ${colors[type] ?? colors.UNKNOWN}`}>{type}</span>;
@@ -130,9 +197,17 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
   const match = await getMatch(slug);
   if (!match) return <div className="min-h-screen bg-black text-white flex items-center justify-center">Match not found: {slug}</div>;
 
-  const hf = match.homeFeatures;
-  const af = match.awayFeatures;
-  const ti = Math.min(100, Math.max(0, 70 * 0.3 + ((match.prediction.expectedHomeGoals + match.prediction.expectedAwayGoals) * 15) * 0.3 + (match.prediction.confidence < 0.6 ? 30 : match.prediction.confidence < 0.7 ? 20 : 10) * 0.2 + 25 * 0.2));
+  const hf = match.homeFeatures ?? {};
+  const af = match.awayFeatures ?? {};
+  const pred = match.prediction;
+  const hasPred = !!(pred?.homeWin != null);
+  const xgSum = (Number(pred?.expectedHomeGoals) || 0) + (Number(pred?.expectedAwayGoals) || 0);
+  const goals = (match.actual?.homeGoals ?? 0) + (match.actual?.awayGoals ?? 0);
+  const ti = Math.min(100, Math.max(0,
+    Math.min(40, goals * 8) * 0.35
+    + Math.min(30, xgSum * 12) * 0.25
+    + (hasPred && pred.confidence < 0.6 ? 22 : hasPred && pred.confidence < 0.75 ? 12 : 5) * 0.2
+    + 15 * 0.2));
   const tl = ti >= 85 ? "TOTAL WAR" : ti >= 70 ? "DANGEROUS" : ti >= 50 ? "HEATED" : ti >= 30 ? "WATCHABLE" : "DORMANT";
 
   return (
@@ -140,40 +215,63 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
       <ScoreHeader match={match} />
       <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card title="Pre-Match Prediction">
+          {hasPred ? (
+          <Card title={`Pre-Match Prediction — ${pred.modelVersion ?? "model"}`}>
             <div className="flex items-center justify-center gap-6 py-2">
-              <ProbabilityRing label={match.homeTeamName} value={match.prediction.homeWin} color="#ef4444" />
-              <ProbabilityRing label="Draw" value={match.prediction.draw} color="#71717a" />
-              <ProbabilityRing label={match.awayTeamName} value={match.prediction.awayWin} color="#3b82f6" />
+              <ProbabilityRing label={match.homeTeamName} value={pred.homeWin} color="#ef4444" />
+              <ProbabilityRing label="Draw" value={pred.draw} color="#71717a" />
+              <ProbabilityRing label={match.awayTeamName} value={pred.awayWin} color="#3b82f6" />
             </div>
+            {pred.expectedHomeGoals != null && (
+              <div className="flex items-center justify-center gap-6 text-xs text-zinc-500 mb-1">
+                <span>xG forecast: <span className="font-mono text-white">{pred.expectedHomeGoals}</span> – <span className="font-mono text-white">{pred.expectedAwayGoals}</span></span>
+              </div>
+            )}
             <div className="text-center text-[10px] text-zinc-600 mt-2">
-              Confidence: {(match.prediction.confidence * 100).toFixed(0)}% · Entropy: {match.prediction.entropy.toFixed(2)}
+              Confidence {(pred.confidence * 100).toFixed(0)}% · cutoff {pred.informationCutoff ?? match.fixture?.date}
             </div>
+            {match.actual?.homeGoals != null && (
+              (() => {
+                const pick = pred.homeWin >= pred.draw && pred.homeWin >= pred.awayWin ? "H" : pred.awayWin >= pred.draw ? "A" : "D";
+                const res = match.actual.homeGoals > match.actual.awayGoals ? "H" : match.actual.homeGoals === match.actual.awayGoals ? "D" : "A";
+                const hit = pick === res;
+                return (
+                  <div className={"mt-3 pt-2 border-t border-zinc-800 text-center text-xs font-bold " + (hit ? "text-green-400" : "text-red-400")}>
+                    Model called: {pick === "H" ? match.homeTeamName : pick === "A" ? match.awayTeamName : "Draw"} — {hit ? "HIT ✓" : `MISS ✗ (${res === "D" ? "draw" : (res === "H" ? match.homeTeamName : match.awayTeamName) + " won"})`}
+                  </div>
+                );
+              })()
+            )}
           </Card>
+          ) : (
+            <Card title="Pre-Match Prediction"><div className="text-sm text-zinc-600">No prediction snapshot for this match.</div></Card>
+          )}
           <Card title="Terror Index">
             <TerrorMeter score={ti} level={tl} />
           </Card>
         </div>
 
-        <Card title="Power Index">
-          <div className="flex items-center gap-8">
-            <div className="flex-1">
-              <div className="flex justify-between text-xs mb-1">
-                <span className="text-red-400 font-bold">{match.homeTeamName}</span>
-                <span className="text-zinc-500">Elo: {match.elo.homeRating.toFixed(0)}</span>
-                <span className="text-blue-400 font-bold">{match.awayTeamName}</span>
-              </div>
-              <div className="h-3 flex rounded-full overflow-hidden bg-zinc-800">
-                <div className="bg-red-500 rounded-l-full" style={{ width: `${(58.9 / (58.9 + 65.8)) * 100}%` }} />
-                <div className="bg-blue-500 rounded-r-full" style={{ width: `${(65.8 / (58.9 + 65.8)) * 100}%` }} />
-              </div>
-              <div className="flex justify-between mt-1">
-                <span className="text-xs font-mono text-red-400">58.9</span>
-                <span className="text-xs font-mono text-blue-400">65.8</span>
+        {match.elo && (
+          <Card title="Power Index">
+            <div className="flex items-center gap-8">
+              <div className="flex-1">
+                <div className="flex justify-between text-xs mb-1">
+                  <span className="text-red-400 font-bold">{match.homeTeamName}</span>
+                  <span className="text-zinc-500">Elo: {match.elo.homeRating.toFixed(0)}</span>
+                  <span className="text-blue-400 font-bold">{match.awayTeamName}</span>
+                </div>
+                <div className="h-3 flex rounded-full overflow-hidden bg-zinc-800">
+                  <div className="bg-red-500 rounded-l-full" style={{ width: `${(match.elo.homeRating / (match.elo.homeRating + match.elo.awayRating)) * 100}%` }} />
+                  <div className="bg-blue-500 rounded-r-full" style={{ width: `${(match.elo.awayRating / (match.elo.homeRating + match.elo.awayRating)) * 100}%` }} />
+                </div>
+                <div className="flex justify-between mt-1">
+                  <span className="text-xs font-mono text-red-400">{match.elo.homeRating.toFixed(1)}</span>
+                  <span className="text-xs font-mono text-blue-400">{match.elo.awayRating.toFixed(1)}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </Card>
+          </Card>
+        )}
 
         <Card title="Match Intelligence">
           <div className="grid grid-cols-2 gap-6">
@@ -206,6 +304,11 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </div>
         </Card>
 
+        {!match.verdict && match.agentSource !== undefined && (
+          <Card title="The Terror — Verdict">
+            <div className="text-sm text-zinc-600">No verdict generated for this match.</div>
+          </Card>
+        )}
         {match.verdict && (
           <div className="rounded-lg border border-red-900/50 bg-gradient-to-br from-red-950/30 to-zinc-900/50 p-5">
             <div className="flex items-center gap-2 mb-3">
@@ -251,7 +354,17 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           </div>
         </Card>
 
+        {pred?.topScores && pred.topScores.length > 0 && (
+          <Card title="Score Probability Grid — Dixon-Coles">
+            <ScoreGrid topScores={pred.topScores} />
+            <div className="mt-3 pt-2 border-t border-zinc-800 text-[10px] text-zinc-600">
+              Fitted on prior history only · information cutoff {pred.informationCutoff ?? match.fixture?.date}
+            </div>
+          </Card>
+        )}
+
         <div className="grid grid-cols-2 gap-4">
+          {match.elo && (
           <Card title="Elo Model">
             <div className="space-y-2 text-xs">
               <div className="flex justify-between"><span className="text-zinc-500">Home Rating</span><span className="font-mono text-white">{match.elo.homeRating.toFixed(0)}</span></div>
@@ -260,21 +373,17 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
               <div className="flex justify-between"><span className="text-zinc-500">Away Win Prob</span><span className="font-mono text-white">{(match.elo.awayExpected * 100).toFixed(1)}%</span></div>
             </div>
           </Card>
-          <Card title="Poisson Model">
-            <div className="space-y-2 text-xs">
-              <div className="flex justify-between"><span className="text-zinc-500">Expected Home Goals</span><span className="font-mono text-white">{match.prediction.expectedHomeGoals}</span></div>
-              <div className="flex justify-between"><span className="text-zinc-500">Expected Away Goals</span><span className="font-mono text-white">{match.prediction.expectedAwayGoals}</span></div>
-              <div className="flex justify-between"><span className="text-zinc-500">Model</span><span className="font-mono text-white">Dixon-Coles ρ=-0.13</span></div>
-              <div className="mt-2 pt-2 border-t border-zinc-800">
-                <div className="text-[10px] text-zinc-600 mb-1">Top Scores</div>
-                {match.prediction.scoreProbabilities?.slice(0, 3).map((sp: any, i: number) => (
-                  <div key={i} className="flex justify-between text-[11px]">
-                    <span className="text-zinc-400">{sp.homeGoals}-{sp.awayGoals}</span>
-                    <span className="font-mono text-white">{(sp.probability * 100).toFixed(1)}%</span>
-                  </div>
-                ))}
+          )}
+          <Card title="Prediction History">
+            {pred ? (
+              <div className="space-y-2 text-xs">
+                <div className="flex justify-between"><span className="text-zinc-500">Snapshot</span><span className="font-mono text-white">{pred.informationCutoff ?? match.fixture?.date}</span></div>
+                <div className="flex justify-between"><span className="text-zinc-500">Model version</span><span className="font-mono text-white">{pred.modelVersion ?? "—"}</span></div>
+                <div className="flex justify-between"><span className="text-zinc-500">Immutable</span><span className="font-mono text-green-400">append-only ✓</span></div>
               </div>
-            </div>
+            ) : (
+              <div className="text-sm text-zinc-600">No snapshots stored.</div>
+            )}
           </Card>
         </div>
 

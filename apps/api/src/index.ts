@@ -26,6 +26,43 @@ let fixturesCache: StoreEntry[] | null = null;
 let ratingsCache: StoreEntry[] | null = null;
 let dcPredsCache: Map<string, StoreEntry> | null = null;
 let agentAnalysisCache: Map<string, StoreEntry> | null = null;
+let ratingsByFixtureCache: Map<string, { home: StoreEntry; away: StoreEntry }> | null = null;
+
+async function loadRatingsByFixture(): Promise<Map<string, { home: StoreEntry; away: StoreEntry }>> {
+  if (ratingsByFixtureCache) return ratingsByFixtureCache;
+  ratingsByFixtureCache = new Map();
+  try {
+    const raw = await fs.readFile(path.join(DB_DIR, "ratings.jsonl"), "utf-8");
+    for (const line of raw.split("\n").filter(Boolean)) {
+      const r = JSON.parse(line);
+      if (!r.fixtureId) continue;
+      let entry = ratingsByFixtureCache.get(String(r.fixtureId));
+      if (!entry) { entry = {} as any; ratingsByFixtureCache.set(String(r.fixtureId), entry); }
+      // First row per fixture is home (ingest order), second is away
+      if (!(entry as any).home) (entry as any).home = r;
+      else (entry as any).away = r;
+    }
+  } catch {}
+  return ratingsByFixtureCache!;
+}
+
+/** Pre-match Elo for one fixture (from chronological replay) */
+async function fixtureElo(fixtureId?: string) {
+  if (!fixtureId) return null;
+  const pair = (await loadRatingsByFixture()).get(fixtureId);
+  if (!pair?.home || !pair?.away) return null;
+  const hr = Number((pair.home as any).preRating);
+  const ar = Number((pair.away as any).preRating);
+  const expHome = 1 / (1 + Math.pow(10, (ar - hr - 100) / 400));
+  return {
+    homeRating: hr,
+    awayRating: ar,
+    homeExpected: Math.round(expHome * 1000) / 1000,
+    awayExpected: Math.round((1 - expHome) * 1000) / 1000,
+    homeDelta: (pair.home as any).delta,
+    awayDelta: (pair.away as any).delta,
+  };
+}
 
 async function loadAgentAnalysis(): Promise<Map<string, StoreEntry>> {
   if (agentAnalysisCache) return agentAnalysisCache;
@@ -140,6 +177,9 @@ app.get("/api/match/:slug", async (req, res) => {
   try {
     const match = await readMatch(req.params.slug);
     if (!match) return res.status(404).json({ error: "Match not found" });
+    if (!match.elo && match.fixture?.id) {
+      match.elo = await fixtureElo(match.fixture.id);
+    }
     res.json(match);
   } catch {
     res.status(500).json({ error: "Failed to load match" });

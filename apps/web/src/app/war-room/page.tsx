@@ -62,9 +62,12 @@ export default async function WarRoom() {
         <div className="max-w-6xl mx-auto px-4 py-10">
           <div className="flex items-center justify-between mb-2">
             <div className="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold">War Room</div>
-            <div className="flex items-center gap-2 text-xs text-zinc-500">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
-              {matches.length} matches · {seasons.join(" + ") || "historical"}
+            <div className="flex items-center gap-4 text-xs">
+              <a href="/models" className="text-zinc-500 hover:text-white transition-colors">Models</a>
+              <span className="flex items-center gap-2 text-zinc-500">
+                <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
+                {matches.length} matches · {seasons.join(" + ") || "historical"}
+              </span>
             </div>
           </div>
           <h1 className="text-4xl font-black text-white">What&apos;s worth knowing</h1>

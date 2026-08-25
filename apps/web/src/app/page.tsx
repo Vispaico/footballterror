@@ -280,7 +280,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-6 text-sm text-zinc-600">
             <a href="/war-room" className="hover:text-white transition-colors">War Room</a>
             <a href="/match/liverpool-arsenal-2016-01-13" className="hover:text-white transition-colors">Match Room</a>
-            <a href="https://api.footballterror.com/api/models/performance" className="hover:text-white transition-colors">Model Performance</a>
+            <a href="/models" className="hover:text-white transition-colors">Models</a>
             <a href="https://github.com/Vispaico/footballterror" className="hover:text-white transition-colors">GitHub</a>
           </div>
           <div className="text-xs text-zinc-700">
